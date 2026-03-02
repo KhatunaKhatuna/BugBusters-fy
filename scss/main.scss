@@ -1,5 +1,3 @@
-@use "./abstracts/variables";
-
-p {
-  font-family: variables.$ff-satoshi;
-}
+@use "./base/reset";
+@use "./base/base";
+@use "./pages/home";
