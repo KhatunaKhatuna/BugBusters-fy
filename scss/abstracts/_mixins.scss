@@ -1,0 +1,5 @@
+@mixin svg-prop($width, $height) {
+  fill: none;
+  width: $width;
+  height: $height;
+}

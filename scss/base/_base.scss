@@ -1,0 +1,9 @@
+@use "../abstracts/variables";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: variables.$ff-satoshi;
+}
