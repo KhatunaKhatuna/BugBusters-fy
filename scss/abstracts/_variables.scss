@@ -1,3 +1,31 @@
 @use "../abstracts/fonts";
 
+// Font
 $ff-satoshi: "satoshi";
+
+// Font sizes
+$fs-xlg-desk: 5rem;
+
+$fs-lg-desk: 3.6rem;
+$fs-lg-mob: 2rem;
+
+$fs-md-desk: 2rem;
+$fs-md-mob: 2rem;
+$fs-semimd-desk: 1.4rem;
+$fs-semimd-mob: 1.2rem;
+
+// Colors
+$bg-primary-desk: #060606;
+$bg-primary-mob: #111111;
+
+$bg-secondary-dark: #202020;
+$bg-secondary-light: #333848;
+
+// color for text, svg and bg-color
+$color-primary: #898989;
+
+$color-active-desk: #e0e0e0;
+$color-active-mob: #898989;
+
+$color-active: #111111;
+$color-accent: #1ed760;
