@@ -43,6 +43,7 @@
     p {
       color: variables.$color-primary;
       white-space: nowrap;
+      margin: 4px 0 0 0;
       overflow: hidden;
       text-overflow: ellipsis;
     }
