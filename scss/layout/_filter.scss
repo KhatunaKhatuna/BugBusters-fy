@@ -1,2 +1,48 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: variables.$fs-semimd-mob;
+
+  .filter-btns {
+    display: flex;
+    gap: 10px;
+  }
+
+  .Music {
+    display: none;
+  }
+
+  button {
+    padding: 8px 15px;
+    background-color: variables.$bg-secondary-dark;
+    color: variables.$color-active-desk;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &.filter-icon {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include mixins.interactiveIcon(
+        $width: 4.1rem,
+        $height: 4.1rem,
+        $defaultColor: variables.$color-primary,
+        $hoverColor: variables.$color-active-desk,
+        $activeColor: variables.$color-active-desk
+      );
+    }
+  }
+}
+@media (min-width: 920px) {
+  .filter {
+    .Music {
+      display: block;
+    }
+  }
+}
