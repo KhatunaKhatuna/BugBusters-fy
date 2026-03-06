@@ -11,8 +11,103 @@
       <header class="header"></header>
       <aside class="sideNavbar"></aside>
       <main class="main">
-        <section class="filter"></section>
-        <section class="recent"></section>
+        <!----- filter --->
+        <section class="filter">
+          <div class="filter-btns">
+            <button class="all active">All</button>
+            <button class="Music">Music</button>
+            <button class="Podcasts">Podcasts</button>
+            <button class="Audiobooks">Audiobooks</button>
+          </div>
+          <button class="filter-icon">
+            <svg
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.8269 13.0859H12.8269C11.7223 13.0859 10.8269 13.9814 10.8269 15.0859C10.8269 16.1905 11.7223 17.0859 12.8269 17.0859H19.8269"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <rect
+                x="23.5961"
+                y="12.0859"
+                width="6.23077"
+                height="6.23077"
+                rx="3.11538"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M20.8269 27.3164L27.8269 27.3164C28.9315 27.3164 29.8269 26.421 29.8269 25.3164C29.8269 24.2118 28.9315 23.3164 27.8269 23.3164L20.8269 23.3164"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <rect
+                x="17.0577"
+                y="28.3164"
+                width="6.23077"
+                height="6.23077"
+                rx="3.11538"
+                transform="rotate(-180 17.0577 28.3164)"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+        </section>
+        <!----- ---recent section for mobile ----->
+        <section class="recent">
+          <div class="recent-container">
+            <div class="music-card">
+              <img
+                src="./assets/images/daftpunk.png"
+                alt="Random Access Memories"
+              />
+              <div class="text-container">
+                <h3>Get Lucky(feat. Pharrell Williams and Nile Rodgers)</h3>
+                <p>Daft Punk</p>
+              </div>
+            </div>
+            <div class="music-card">
+              <img src="./assets/images/dailymix2.png" alt="Daily Mix 2" />
+              <div class="text-container">
+                <h3>Daily Mix 2</h3>
+              </div>
+            </div>
+            <div class="music-card">
+              <img src="./assets/images/dalymix1.png" alt="Daily Mix 1" />
+              <div class="text-container">
+                <h3>Daily Mix 1</h3>
+              </div>
+            </div>
+            <div class="music-card">
+              <img src="./assets/images/daftpunk.png" alt="Instant Crush" />
+              <div class="text-container">
+                <h3>Instant Crush</h3>
+                <p>Daft Punk</p>
+              </div>
+            </div>
+            <div class="music-card">
+              <img src="./assets/images/daftpunk.png" alt="Get Lucky" />
+              <div class="text-container">
+                <h3>Around the world</h3>
+                <p>Daft Punk</p>
+              </div>
+            </div>
+            <div class="music-card">
+              <img src="./assets/images/rockmix.png" alt="Rock Mix" />
+              <div class="text-container">
+                <h3>Rock Mix</h3>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="forYou"></section>
         <section class="topMixes"></section>
         <section class="favoriteArtists"></section>
