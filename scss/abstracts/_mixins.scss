@@ -1,19 +1,12 @@
 @use "./variables";
 
 @mixin interactiveIcon(
-  $width: 4.1rem,
-  $height: 4.1rem,
   $defaultColor: variables.$color-primary,
   $hoverColor: variables.$color-active-desk,
   $activeColor: variables.$color-active-desk
 ) {
   color: $defaultColor;
   transition: color 0.3s ease;
-  svg {
-    width: $width;
-    height: $height;
-    fill: none;
-  }
   &:hover {
     color: $hoverColor;
   }
