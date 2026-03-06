@@ -2,14 +2,13 @@
 @use "../abstracts/variables";
 
 .filter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include mixins.flex-prop(space-between);
+  padding: 0 1.5rem;
   font-size: variables.$fs-semimd-mob;
 
   .filter-btns {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
   }
 
   .Music {
@@ -17,21 +16,17 @@
   }
 
   button {
-    padding: 8px 15px;
+    padding: 0.8rem 1.5rem;
     background-color: variables.$bg-secondary-dark;
     color: variables.$color-active-desk;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     cursor: pointer;
 
     &.filter-icon {
+      @include mixins.flex-prop();
       background-color: transparent;
-      display: flex;
-      align-items: center;
-      justify-content: center;
 
       @include mixins.interactiveIcon(
-        $width: 4.1rem,
-        $height: 4.1rem,
         $defaultColor: variables.$color-primary,
         $hoverColor: variables.$color-active-desk,
         $activeColor: variables.$color-active-desk
@@ -39,8 +34,15 @@
     }
   }
 }
+
 @media (min-width: 920px) {
   .filter {
+    font-size: variables.$fs-semimd-desk;
+    button.active {
+      color: variables.$bg-primary-mob;
+      background-color: variables.$color-active-desk;
+    }
+
     .Music {
       display: block;
     }
