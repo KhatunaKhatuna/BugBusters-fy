@@ -2,15 +2,8 @@
 @use "../abstracts/fonts";
 @use "../abstracts/mixins";
 
-.sideNavbar {
-  display: none;
-}
-
 @media (min-width: 920px) {
   .sideNavbar {
-    padding: 0.7rem;
-    padding-right: 0;
-
     nav {
       height: 100%;
       padding-left: 1.1rem;
@@ -33,10 +26,6 @@
         &:hover {
           background-color: variables.$bg-secondary-dark;
           border-radius: 3px;
-        }
-
-        span {
-          font-size: variables.$fs-semimd-desk;
         }
       }
     }

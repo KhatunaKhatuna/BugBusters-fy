@@ -4,7 +4,7 @@
 .filter {
   @include mixins.flex-prop($align: center, $justify: space-between);
   padding: 0 1.5rem;
-  font-size: variables.$fs-semimd-mob;
+  font-size: 1.2rem;
 
   .filter-btns {
     display: flex;
@@ -33,7 +33,6 @@
 
 @media (min-width: 920px) {
   .filter {
-    font-size: variables.$fs-semimd-desk;
     button.active {
       color: variables.$bg-primary-mob;
       background-color: variables.$color-active-desk;

@@ -1,5 +1,11 @@
 @use "./variables";
 
+@mixin layoutBorder {
+  border: solid 2px variables.$bg-secondary-dark;
+  border-radius: 1rem;
+  min-height: 100%;
+}
+
 @mixin interactiveIcon(
   $defaultColor: variables.$color-primary,
   $hoverColor: variables.$color-active-desk,
@@ -24,5 +30,4 @@
   align-items: $align;
   justify-content: $justify;
   gap: $gap;
-
 }
