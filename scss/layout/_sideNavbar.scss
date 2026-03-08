@@ -1,0 +1,44 @@
+@use "../abstracts/variables";
+@use "../abstracts/fonts";
+@use "../abstracts/mixins";
+
+.sideNavbar {
+  display: none;
+}
+
+@media (min-width: 920px) {
+  .sideNavbar {
+    padding: 0.7rem;
+    padding-right: 0;
+
+    nav {
+      height: 100%;
+      padding-left: 1.1rem;
+      border-radius: 1rem;
+
+      ul {
+        @include mixins.flex-prop(1rem, column);
+      }
+
+      a {
+        @include mixins.flex-prop(1rem, $align: center);
+        @include mixins.interactiveIcon;
+        width: 100%;
+        transition: 0.3s;
+
+        svg:last-child {
+          margin-left: auto;
+        }
+
+        &:hover {
+          background-color: variables.$bg-secondary-dark;
+          border-radius: 3px;
+        }
+
+        span {
+          font-size: variables.$fs-semimd-desk;
+        }
+      }
+    }
+  }
+}
