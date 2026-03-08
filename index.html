@@ -33,10 +33,10 @@
         <!---- Player ---->
         <section class="player">
           <div class="player-container">
-            <!---- Control section ---->
+            <div class="player-wrapper">
+              <!---- Control section ---->
 
-            <ul class="controllers">
-              <li>
+              <div class="controllers">
                 <button id="play" class="play-btn">
                   <svg
                     width="41"
@@ -51,8 +51,6 @@
                     />
                   </svg>
                 </button>
-              </li>
-              <li>
                 <button id="pause" class="pause-btn">
                   <svg
                     width="41"
@@ -75,8 +73,6 @@
                     />
                   </svg>
                 </button>
-              </li>
-              <li>
                 <button id="prev" class="prev-btn">
                   <svg
                     width="41"
@@ -97,8 +93,6 @@
                     />
                   </svg>
                 </button>
-              </li>
-              <li>
                 <button id="next" class="next-btn">
                   <svg
                     width="41"
@@ -119,8 +113,6 @@
                     />
                   </svg>
                 </button>
-              </li>
-              <li>
                 <button id="shaffle" class="shaffle-btn">
                   <svg
                     width="41"
@@ -145,8 +137,6 @@
                     />
                   </svg>
                 </button>
-              </li>
-              <li>
                 <button id="loop" class="loop-btn">
                   <svg
                     width="41"
@@ -164,96 +154,98 @@
                     />
                   </svg>
                 </button>
-              </li>
-            </ul>
-
-            <!---- Audio section ---->
-            <div class="media">
-              <div class="track">
-                <div class="track-control">
-                  <span class="item current-time">2:23</span>
-                  <input
-                    type="range"
-                    id="track-slider"
-                    class="item track-slider"
-                  />
-                  <span class="item duration">4:45</span>
-                </div>
-                <audio id="audio"></audio>
-                <div class="volume-control">
-                  <button id="volume" class="volume-btn">
-                    <svg
-                      width="41"
-                      height="41"
-                      viewBox="0 0 41 41"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_24_424)">
-                        <path
-                          d="M12.8558 23.8203C9.87736 22.3311 9.87736 18.081 12.8558 16.5918L21.5883 12.2256C22.0359 12.0018 22.5625 12.3268 22.5629 12.8271L22.5629 27.584C22.5629 28.0846 22.036 28.4102 21.5883 28.1865L12.8558 23.8203Z"
-                          stroke="currentColor"
-                          stroke-width="2.02054"
-                        />
-                        <path
-                          d="M26.9406 25.2578C27.7294 25.0427 28.4588 24.5653 29.04 23.8699C29.852 22.8983 30.3082 21.5805 30.3082 20.2065C30.3082 18.8324 29.852 17.5146 29.04 16.543C28.4588 15.8476 27.7294 15.3703 26.9406 15.1551"
-                          stroke="currentColor"
-                          stroke-width="1.68378"
-                          stroke-linecap="round"
-                        />
-                        <path
-                          d="M26.0987 19.6957C26.0987 19.5131 26.2522 19.3593 26.4208 19.4291C26.523 19.4714 26.6158 19.5335 26.694 19.6116C26.7722 19.6898 26.8342 19.7826 26.8765 19.8848C26.9188 19.9869 26.9406 20.0964 26.9406 20.2069C26.9406 20.3175 26.9188 20.427 26.8765 20.5291C26.8342 20.6313 26.7722 20.7241 26.694 20.8022C26.6158 20.8804 26.523 20.9424 26.4208 20.9847C26.2522 21.0546 26.0987 20.9008 26.0987 20.7182L26.0987 20.2069L26.0987 19.6957Z"
-                          fill="#898989"
-                          stroke="currentColor"
-                          stroke-width="0.841892"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_24_424">
-                          <rect
-                            width="23.573"
-                            height="23.573"
-                            fill="white"
-                            transform="translate(8.41895 8.41992)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </button>
-                  <input
-                    type="range"
-                    id="volumeSlider"
-                    min="0"
-                    max="1"
-                    step="0.1"
-                    value="1"
-                  />
-                </div>
               </div>
 
-              <article class="media-info">
-                <a href="#" class="card-recent">
-                  <div class="img-container">
-                    <img src="" alt="Random Access Memories" />
+              <!---- Audio section ---->
+              <div class="media">
+                <div class="track">
+                  <div class="track-control">
+                    <span class="item current-time">2:23</span>
+                    <input
+                      type="range"
+                      id="track-slider"
+                      class="item track-slider"
+                      value="0"
+                    />
+                    <span class="item duration">4:45</span>
                   </div>
-                  <div class="text-container">
-                    <div class="heading">
-                      <h3>
-                        Get Lucky(feat. Pharrell Williams and Nile Rodgers)
-                      </h3>
-                    </div>
-                    <div>
-                      <p class="description">Daft Punk</p>
-                    </div>
+                  <audio id="audio"></audio>
+                  <div class="volume-control">
+                    <button id="volume" class="item volume-btn">
+                      <svg
+                        width="41"
+                        height="41"
+                        viewBox="0 0 41 41"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_24_424)">
+                          <path
+                            d="M12.8558 23.8203C9.87736 22.3311 9.87736 18.081 12.8558 16.5918L21.5883 12.2256C22.0359 12.0018 22.5625 12.3268 22.5629 12.8271L22.5629 27.584C22.5629 28.0846 22.036 28.4102 21.5883 28.1865L12.8558 23.8203Z"
+                            stroke="currentColor"
+                            stroke-width="2.02054"
+                          />
+                          <path
+                            d="M26.9406 25.2578C27.7294 25.0427 28.4588 24.5653 29.04 23.8699C29.852 22.8983 30.3082 21.5805 30.3082 20.2065C30.3082 18.8324 29.852 17.5146 29.04 16.543C28.4588 15.8476 27.7294 15.3703 26.9406 15.1551"
+                            stroke="currentColor"
+                            stroke-width="1.68378"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M26.0987 19.6957C26.0987 19.5131 26.2522 19.3593 26.4208 19.4291C26.523 19.4714 26.6158 19.5335 26.694 19.6116C26.7722 19.6898 26.8342 19.7826 26.8765 19.8848C26.9188 19.9869 26.9406 20.0964 26.9406 20.2069C26.9406 20.3175 26.9188 20.427 26.8765 20.5291C26.8342 20.6313 26.7722 20.7241 26.694 20.8022C26.6158 20.8804 26.523 20.9424 26.4208 20.9847C26.2522 21.0546 26.0987 20.9008 26.0987 20.7182L26.0987 20.2069L26.0987 19.6957Z"
+                            fill="#898989"
+                            stroke="currentColor"
+                            stroke-width="0.841892"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_24_424">
+                            <rect
+                              width="23.573"
+                              height="23.573"
+                              fill="white"
+                              transform="translate(8.41895 8.41992)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <input
+                      type="range"
+                      id="volume-slider"
+                      class="item volume-slider"
+                      min="0"
+                      max="1"
+                      step="0.1"
+                      value="1"
+                    />
                   </div>
-                </a>
-              </article>
-            </div>
+                </div>
 
-            <!---- Action section ---->
-            <div class="actions">
-              <ul class="metadata">
-                <li>
+                <article class="media-info">
+                  <a href="#" class="card-recent">
+                    <div class="img-container">
+                      <img
+                        src="./assets/images/daftpunk.png"
+                        alt="Random Access Memories"
+                      />
+                    </div>
+                    <div class="text-container">
+                      <div class="heading">
+                        <h3>Get Lucky</h3>
+                      </div>
+                      <div class="description">
+                        <p>Daft Punk</p>
+                        <p>Random Access Memories</p>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+              <!---- Action section ---->
+              <div class="actions">
+                <div class="metadata">
                   <button id="like" class="like-btn">
                     <svg
                       width="41"
@@ -271,8 +263,6 @@
                       />
                     </svg>
                   </button>
-                </li>
-                <li>
                   <button id="add-to-playlist" class="add-to-playlist-btn">
                     <svg
                       width="41"
@@ -305,8 +295,6 @@
                       />
                     </svg>
                   </button>
-                </li>
-                <li>
                   <button id="lirics" class="lirics-btn">
                     <svg
                       width="41"
@@ -342,8 +330,6 @@
                       />
                     </svg>
                   </button>
-                </li>
-                <li>
                   <button id="device" class="device-btn">
                     <svg
                       width="41"
@@ -388,8 +374,6 @@
                       />
                     </svg>
                   </button>
-                </li>
-                <li>
                   <button id="more" class="more-btn">
                     <svg
                       width="41"
@@ -418,11 +402,8 @@
                       />
                     </svg>
                   </button>
-                </li>
-              </ul>
-
-              <ul class="utilities">
-                <li>
+                </div>
+                <div class="utilities">
                   <button id="hide" class="hide-btn">
                     <svg
                       width="41"
@@ -438,8 +419,6 @@
                       />
                     </svg>
                   </button>
-                </li>
-                <li>
                   <button id="queue" class="queue-btn">
                     <svg
                       width="41"
@@ -469,8 +448,8 @@
                       />
                     </svg>
                   </button>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
