@@ -2,7 +2,7 @@
 @use "../abstracts/variables";
 
 .filter {
-  @include mixins.flex-prop(space-between);
+  @include mixins.flex-prop($align: center, $justify: space-between);
   padding: 0 1.5rem;
   font-size: variables.$fs-semimd-mob;
 
@@ -11,7 +11,7 @@
     gap: 1rem;
   }
 
-  .Music {
+  .all {
     display: none;
   }
 
@@ -23,14 +23,10 @@
     cursor: pointer;
 
     &.filter-icon {
-      @include mixins.flex-prop();
+      // @include mixins.flex-prop($align: center, $justify: center);
       background-color: transparent;
 
-      @include mixins.interactiveIcon(
-        $defaultColor: variables.$color-primary,
-        $hoverColor: variables.$color-active-desk,
-        $activeColor: variables.$color-active-desk
-      );
+      @include mixins.interactiveIcon;
     }
   }
 }
@@ -43,7 +39,7 @@
       background-color: variables.$color-active-desk;
     }
 
-    .Music {
+    .all {
       display: block;
     }
   }
