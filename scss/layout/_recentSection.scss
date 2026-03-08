@@ -1,40 +1,42 @@
 @use "../abstracts/variables";
 
+.recent {
+  padding: 0 1.5rem;
+}
 .recent-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  padding-top: 20px;
+  gap: 1.6rem;
+  article {
+    overflow: hidden;
+  }
 }
-
-.music-card {
+.card-recent {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.8rem;
   font-size: variables.$fs-semimd-desk;
-  padding: 8px;
+  padding: 0.8rem;
   background-color: variables.$bg-secondary-dark;
-  border-radius: 8px;
-  overflow: hidden;
-  cursor: pointer;
-  img {
+  border-radius: 0.8rem;
+  .img-container {
     width: 43px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 3px;
     flex-shrink: 0; // makes surees  text doesn't squeeze the image
+    img {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 0.3rem;
+    }
   }
 
   .text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 12px;
     overflow: hidden;
 
     h3 {
       color: variables.$color-active-desk;
-      margin: 0;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; // adds ... if  title is too long
@@ -42,7 +44,6 @@
     p {
       color: variables.$color-primary;
       white-space: nowrap;
-      margin: 4px 0 0 0;
       overflow: hidden;
       text-overflow: ellipsis;
     }
