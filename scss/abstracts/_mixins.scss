@@ -6,6 +6,7 @@
   min-height: 100%;
 }
 
+// To change icon hover and active. use with parent of svg
 @mixin interactiveIcon(
   $defaultColor: variables.$color-primary,
   $hoverColor: variables.$color-active-desk,
@@ -24,10 +25,87 @@
   }
 }
 
+// Flex universal mixin
 @mixin flex-prop($gap: null, $direction: null, $align: null, $justify: null) {
   display: flex;
   flex-direction: $direction;
   align-items: $align;
   justify-content: $justify;
   gap: $gap;
+}
+
+// To change every image shape. use with images
+@mixin imageShaper($brRadius: 0.3rem, $shape: square, $ratio: 1/1) {
+  aspect-ratio: $ratio;
+  object-fit: cover;
+  border-radius: $brRadius;
+  @if $shape == circle {
+    border-radius: 50%;
+  }
+}
+
+// Use on image parent container (img-container)to add before and after elements
+// use pin, one and ex parameters to change effects
+@mixin cardBeforeEffect($effect: none) {
+  @include flex-prop($align: center, $justify: center);
+  position: relative;
+  border-top: solid 2px variables.$bg-primary-desk;
+  &::before,
+  &::after {
+    content: "";
+    margin: 0 auto;
+    width: calc(154 / 170 * 100%);
+    height: 100%;
+    background-color: variables.$color-active-desk;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-0.6rem);
+    border-radius: 0.7rem;
+    border-top: solid 2px variables.$bg-primary-desk;
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+  &::after {
+    width: calc(133 / 170 * 100%);
+    transform: translateY(-0.9rem);
+    background-color: variables.$color-active-desk;
+    z-index: -2;
+  }
+  &::before,
+  &::after {
+    box-shadow: 0 0.4rem 0.4rem 0 variables.$bg-primary-desk;
+  }
+  @if $effect == one {
+    &::after {
+      display: none;
+    }
+    &::before {
+      transform: translateY(-1rem);
+    }
+  }
+  @if $effect == pin {
+    &::after {
+      background: url(../../assets/icons/pins/Vector\ 38.svg) no-repeat center;
+      z-index: 0;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: variables.$color-active;
+      right: 0;
+      top: 0;
+    }
+  }
+  @if $effect == ex {
+    &::after {
+      background: url(../../assets/icons/pins/Frame\ 5.svg) no-repeat center;
+      z-index: 0;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: variables.$color-active;
+      right: 0;
+      top: 0;
+    }
+  }
 }

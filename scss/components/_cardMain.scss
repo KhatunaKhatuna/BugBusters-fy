@@ -1,0 +1,56 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../abstracts/placeholders";
+
+//For vertical cards
+
+.card-main {
+  @include mixins.flex-prop($direction: column, $gap: 0.5rem);
+
+  width: 14rem;
+  .img-container {
+    // Here waits to use @mixin cardBeforeEffect
+    //use one, pin or none as necessary
+    border-radius: 0.6rem;
+    img {
+      @include mixins.imageShaper(0.6rem);
+      transition: transform 0.35s ease;
+    }
+  }
+
+  .text-container {
+    @include mixins.flex-prop($gap: 0.8rem, $direction: column);
+    .heading {
+      @include mixins.flex-prop($justify: space-between);
+      font-size: 1.2rem;
+      color: variables.$color-active-desk;
+    }
+    .description {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 920px) {
+  .card-main {
+    width: 17rem;
+    .img-container {
+      border-radius: 0.7rem;
+      img {
+        @include mixins.imageShaper(0.7rem, $ratio: 2/3);
+      }
+    }
+    .text-container {
+      .heading {
+        font-size: 1.4rem;
+      }
+      .description {
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
