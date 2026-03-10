@@ -5,14 +5,21 @@
 //For vertical cards
 
 .card-main {
-  @include mixins.flex-prop($direction: column, $gap: 0.5rem);
+  // you should use this mixin in your code under the .card-main class
+  // @include mixins.pinStyle
+  // use parameters: ex or pin
 
+  @include mixins.flex-prop($direction: column, $gap: 0.5rem);
   width: 14rem;
   .img-container {
-    // Here waits to use @mixin cardBeforeEffect
-    //use one, pin or none as necessary
+    // you should use this mixin in your code under the .img-container class
+    // @mixin cardBeforeEffect
+    // use parameters: one or two
     border-radius: 0.6rem;
     img {
+      // you should use this mixin in your code under the img tag to define img shape
+      // @include mixins.imageShaper
+      // use parameters: $brRadius, $shape or $ration
       @include mixins.imageShaper(0.6rem);
       transition: transform 0.35s ease;
     }
