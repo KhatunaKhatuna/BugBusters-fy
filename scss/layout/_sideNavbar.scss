@@ -4,10 +4,18 @@
 
 @media (min-width: 920px) {
   .sideNavbar {
+
+    
     nav {
       height: 100%;
       padding-left: 1.1rem;
       border-radius: 1rem;
+      &.active{
+        background-color: variables.$color-active;
+        & a:hover{
+          background-color: variables.$bg-secondary-dark;
+        }
+      }
 
       ul {
         @include mixins.flex-prop(1rem, column);
