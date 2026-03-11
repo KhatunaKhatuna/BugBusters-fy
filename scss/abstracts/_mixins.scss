@@ -64,7 +64,7 @@
     z-index: -1;
     transform: translateY(-0.6rem);
     border-radius: 0.7rem;
-    border-top: solid 2px variables.$bg-primary-desk;
+    border-top: solid 1px variables.$bg-primary-desk;
     transition:
       transform 0.35s ease,
       box-shadow 0.35s ease;
@@ -95,12 +95,12 @@
     content: " ";
     background: url(../../assets/icons/pins/Vector\ 38.svg) no-repeat center;
     z-index: 1;
-    width: 4rem;
-    height: 4rem;
+    width: 4.4rem;
+    height: 4.4rem;
     border-radius: 50%;
     background-color: variables.$color-active;
     position: absolute;
-    right: 0;
+    right: -0.3rem;
     top: 0;
     transform: translateY(-0.7rem);
     border-top: none;
@@ -122,6 +122,7 @@
     }
   }
 }
+
 
 // To scroll section horizontal
 @mixin horizontalScroll($gap: 1.1rem) {
@@ -155,3 +156,4 @@
     }
   }
 }
+
