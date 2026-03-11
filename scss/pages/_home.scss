@@ -1,6 +1,8 @@
 @use "../layout/pageLayout";
-@use "../layout/header";
-@use "../layout/sideNavbar";
-@use "../layout/sidePopup";
-@use "../layout/filter";
-@use "../layout/recentSection";
+
+// Main content
+@use "../layout/home/filter";
+@use "../layout/home/recentSection";
+@use "../layout/home/topMixes";
+@use "../layout/home/forYou";
+

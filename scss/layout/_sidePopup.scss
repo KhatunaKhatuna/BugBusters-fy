@@ -7,10 +7,10 @@
 
 @media (min-width: 920px) {
   .sidePopup {
-    min-width: 33rem;
-    padding: 0.8rem;
-    background-color: variables.$bg-secondary-dark;
-    border-radius: 0.8rem;
+
+    .card-recent {
+      background-color: transparent;
+    }
 
     .sidePopup-wrapper {
       @include mixins.flex-prop(2.4rem, column);

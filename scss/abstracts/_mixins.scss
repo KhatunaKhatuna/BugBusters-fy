@@ -1,4 +1,5 @@
 @use "./variables";
+@use "./placeholders";
 
 @mixin layoutBorder {
   border: solid 2px variables.$bg-secondary-dark;
@@ -123,4 +124,36 @@
 }
 
 
+// To scroll section horizontal
+@mixin horizontalScroll($gap: 1.1rem) {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: $gap;
+
+  scroll-snap-type: x mandatory;
+  //  scroll-behavior: smooth;
+
+  //     scroll-padding-inline: 50px;
+  & > * {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+  @extend %scrollBarNon;
+}
+@mixin card-badges($colors) {
+  @each $name, $color in $colors {
+    &.#{$name} {
+      .img-container {
+        &::before,
+        &::after {
+          background-color: $color;
+        }
+      }
+      .text-container .heading span {
+        color: $color;
+      }
+    }
+  }
+}
 
