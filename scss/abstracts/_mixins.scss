@@ -140,3 +140,18 @@
   }
   @extend %scrollBarNon;
 }
+@mixin card-badges($colors) {
+  @each $name, $color in $colors {
+    &.#{$name} {
+      .img-container {
+        &::before,
+        &::after {
+          background-color: $color;
+        }
+      }
+      .text-container .heading span {
+        color: $color;
+      }
+    }
+  }
+}
