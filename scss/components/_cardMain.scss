@@ -8,6 +8,7 @@
   // you should use this mixin in your code under the .card-main class
   // @include mixins.pinStyle
   // use parameters: ex or pin
+  
 
   @include mixins.flex-prop($direction: column, $gap: 0.5rem);
   width: 14rem;
