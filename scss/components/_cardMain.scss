@@ -49,7 +49,7 @@
     .img-container {
       border-radius: 0.7rem;
       img {
-        @include mixins.imageShaper(0.7rem, $ratio: 2/3);
+        @include mixins.imageShaper(0.7rem);
       }
     }
     .text-container {
