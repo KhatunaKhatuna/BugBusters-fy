@@ -11,6 +11,11 @@
 
       ul {
         @include mixins.flex-prop(1rem, column);
+        li:first-child {
+          a {
+            padding-block: 0.5rem;
+          }
+        }
       }
 
       a {
