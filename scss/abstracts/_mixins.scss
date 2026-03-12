@@ -132,14 +132,39 @@
   gap: $gap;
 
   scroll-snap-type: x mandatory;
-  //  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 
-  //     scroll-padding-inline: 50px;
   & > * {
     flex: 0 0 auto;
     scroll-snap-align: start;
   }
-  @extend %scrollBarNon;
+  //  Hide scrollbar for IE, Edge and Firefox
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  // Hide scrollbar for Chrome, Safari and Opera
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin card-badges($colors, $cardType: main) {
+  @each $name, $color in $colors {
+    &.#{$name} {
+      .img-container {
+        &::before,
+        &::after {
+          background-color: $color;
+        }
+      }
+      .text-container .heading span {
+        color: $color;
+      }
+      @if $cardType == search {
+        background-color: $color;
+      }
+    }
+  }
 }
 @mixin card-badges($colors) {
   @each $name, $color in $colors {
