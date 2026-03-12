@@ -74,9 +74,6 @@
     transform: translateY(-0.9rem);
     z-index: -2;
   }
-  &::before,
-  &::after {
-  }
   @if $effect == one {
     &::after {
       display: none;
@@ -123,7 +120,6 @@
   }
 }
 
-
 // To scroll section horizontal
 @mixin horizontalScroll($gap: 1.1rem) {
   display: flex;
@@ -166,19 +162,3 @@
     }
   }
 }
-@mixin card-badges($colors) {
-  @each $name, $color in $colors {
-    &.#{$name} {
-      .img-container {
-        &::before,
-        &::after {
-          background-color: $color;
-        }
-      }
-      .text-container .heading span {
-        color: $color;
-      }
-    }
-  }
-}
-
