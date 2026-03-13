@@ -1,0 +1,131 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+// ***********************************
+// Table component desktop version
+// ***********************************
+
+.tracklist {
+  width: 100%;
+  max-width: 120rem;
+
+  &-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      th {
+        text-align: left;
+        padding: 10px;
+        padding-bottom: 1.2rem;
+        border-bottom: 1px solid variables.$color-primary;
+      }
+    }
+    tbody {
+      .track {
+        transition: all 0.15s ease;
+        &:hover {
+          background: variables.$bg-secondary-dark;
+        }
+        td {
+          padding: 10px;
+          vertical-align: middle;
+        }
+
+        &-index {
+          width: 30px;
+        }
+
+        /* title cell track details */
+        &-title-cell {
+          a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+          }
+        }
+        &-cover {
+          width: 5.1rem;
+          height: 5.1rem;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+        &-meta {
+          display: flex;
+          flex-direction: column;
+        }
+        &-name {
+          color: variables.$color-active-desk;
+        }
+
+        /*likes*/
+        &-like {
+          @include mixins.interactiveIcon(
+            $hoverColor: #1ed760,
+            $activeColor: #1ed760
+          );
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/*  <div class="tracklist">
+                <table class="tracklist-table">
+                  <thead>
+                    <tr>
+                      <th class="tracklist-index">#</th>
+                      <th class="tracklist-title">Title</th>
+                      <th class="tracklist-album">Album</th>
+                      <th class="tracklist-duration">Duration</th>
+                      <th class="tracklist-like"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="track">
+                      <td class="track-index">1</td>
+
+                      <td class="track-title-cell">
+                        <article>
+                          <a class="">
+                            <img
+                              src="../assets/images/daftpunk.png"
+                              alt=""
+                              class="track-cover"
+                            />
+                            <div class="track-meta">
+                              <span class="track-name">Instant Crush</span>
+                              <span class="track-artist"
+                                >Daft Punk, Julian Casablancas</span
+                              >
+                            </div>
+                          </a>
+                        </article>
+                      </td>
+
+                      <td class="track-album">Random Access Memories</td>
+                      <td class="track-duration">4:35</td>
+                      <td class="track-like">
+                        <svg
+                          width="23"
+                          height="20"
+                          viewBox="0 0 23 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z"
+                            stroke="currentColor"
+                            stroke-width="2.02054"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </td>
+                    </tr>
+                    <!-- add tr -->
+                  </tbody>
+                </table>
+              </div>
+              */
