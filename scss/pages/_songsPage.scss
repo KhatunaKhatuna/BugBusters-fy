@@ -4,7 +4,12 @@
 
 .song-detail {
   padding: 4rem;
-
+  background: linear-gradient(
+    to bottom,
+    #060606 0%,
+    #8a9dbb2e 15%,
+    #060606 100%
+  );
   .song-hero {
     display: grid;
     grid-template-columns: 50rem 1fr;
