@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>BugBusters-fy</title>
   </head>
   <body>
-    <div class="pageLayout open">
+    <div class="pageLayout">
       <!-- *========header content start======= -->
       <header class="header">
         <nav class="header-wrapper">
           <div class="header-nav">
-            <a class="active" href="#">
+            <a class="active" href="../index.html">
               <svg
                 width="41"
                 height="41"
@@ -270,7 +270,7 @@
               <li>
                 <a href="#"
                   ><img
-                    src="./assets/images/Sprite-0002 1.png"
+                    src="../assets/images/Sprite-0002 1.png"
                     alt="profile logo"
                 /></a>
               </li>
@@ -287,7 +287,7 @@
         <nav>
           <ul>
             <li>
-              <a href="./html/library.html" class="my-library">
+              <a href="./library.html" class="my-library">
                 <svg
                   width="41"
                   height="41"
@@ -408,7 +408,7 @@
             </li>
 
             <li>
-              <a href="#" class="liked-songs">
+              <a href="../html/library-liked-songs.html" class="liked-songs">
                 <svg
                   width="41"
                   height="41"
@@ -598,710 +598,352 @@
 
       <!-- *Main navigation section end -->
 
+      <!-- *songs page start -->
+
       <main class="main">
-        <div class="main-container">
-          <!----- filter --->
-          <section class="filter">
-            <div class="filter-btns">
-              <button class="all active">All</button>
-              <button class="Music">Music</button>
-              <button class="Podcasts">Podcasts</button>
-              <button class="Audiobooks">Audiobooks</button>
+        <section class="song-detail">
+          <div class="song-hero">
+            <div class="song-cover">
+              <img src="../assets/images/songs/daftpunk.png" alt="daft punk" />
             </div>
-            <button class="filter-icon">
-              <svg
-                width="41"
-                height="41"
-                viewBox="0 0 41 41"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19.8269 13.0859H12.8269C11.7223 13.0859 10.8269 13.9814 10.8269 15.0859C10.8269 16.1905 11.7223 17.0859 12.8269 17.0859H19.8269"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <rect
-                  x="23.5961"
-                  y="12.0859"
-                  width="6.23077"
-                  height="6.23077"
-                  rx="3.11538"
-                  stroke="currentColor"
-                  stroke-width="2"
-                />
-                <path
-                  d="M20.8269 27.3164L27.8269 27.3164C28.9315 27.3164 29.8269 26.421 29.8269 25.3164C29.8269 24.2118 28.9315 23.3164 27.8269 23.3164L20.8269 23.3164"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <rect
-                  x="17.0577"
-                  y="28.3164"
-                  width="6.23077"
-                  height="6.23077"
-                  rx="3.11538"
-                  transform="rotate(-180 17.0577 28.3164)"
-                  stroke="currentColor"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-          </section>
 
-          <!----- ---recent section for mobile ----->
-          <section class="recent">
-            <div class="recent-container">
-              <article>
-                <a href="./html/songs-page.html" class="card-recent">
-                  <div class="img-container">
-                    <img
-                      src="./assets/images/daftpunk.png"
-                      alt="Random Access Memories"
+            <div class="song-info">
+              <h1 class="song-title">
+                Get Lucky (feat. Pharrell Williams and Nile Rodgers)
+              </h1>
+
+              <ul class="song-meta">
+                <li class="meta-artist">Daft Punk</li>
+                <li>Random Access Memories</li>
+                <li>2013</li>
+                <li>6:09</li>
+                <li>489,691,133</li>
+              </ul>
+
+              <div class="song-controls">
+                <button class="btn-icon play">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="20.2054"
+                      cy="20.2054"
+                      r="20.2054"
+                      fill="#1ED760"
                     />
-                  </div>
-                  <div class="text-container">
-                    <div class="heading">
-                      <h3>
-                        Get Lucky(feat. Pharrell Williams and Nile Rodgers)
-                      </h3>
-                    </div>
-                    <div class="description">
-                      <p>Daft Punk</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
-
-              <article>
-                <a href="#" class="card-recent">
-                  <div class="img-container">
-                    <img
-                      src="./assets/images/dailymix2.png"
-                      alt="Daily Mix 2"
+                    <path
+                      d="M26.328 18.8794C27.3484 19.4686 27.3484 20.9415 26.328 21.5307L18.2917 26.1704C17.2712 26.7596 15.9956 26.0231 15.9956 24.8448L15.9956 15.5653C15.9956 14.387 17.2712 13.6505 18.2917 14.2397L26.328 18.8794Z"
+                      fill="black"
                     />
-                  </div>
-                  <div class="text-container">
-                    <div class="heading">
-                      <h3>Daily Mix 2</h3>
-                    </div>
-                  </div>
-                </a>
-              </article>
-
-              <article>
-                <a href="#" class="card-recent">
-                  <div class="img-container">
-                    <img src="./assets/images/dalymix1.png" alt="Daily Mix 1" />
-                  </div>
-                  <div class="text-container">
-                    <div class="heading">
-                      <h3>Daily Mix 1</h3>
-                    </div>
-                  </div>
-                </a>
-              </article>
-
-              <article>
-                <a href="#" class="card-recent">
-                  <div class="img-container">
-                    <img
-                      src="./assets/images/daftpunk.png"
-                      alt="Instant Crush"
+                  </svg>
+                </button>
+                <button class="btn-icon">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.0693 13.5676L20.2054 15.3735L18.3416 13.5676C16.3872 11.6739 13.2521 11.7785 11.4282 13.7981C9.65847 15.7579 9.41482 18.6933 11.0174 20.792C11.2143 21.0499 11.408 21.2969 11.5922 21.523C12.7587 22.9539 15.3037 25.4529 16.5788 26.794C17.5209 27.7848 18.3677 28.6111 19.0057 29.213C19.6794 29.8486 20.7194 29.8347 21.3944 29.2005C22.5707 28.0951 24.3747 26.3734 25.6453 25.037C26.9205 23.6959 27.6522 22.9539 28.8186 21.523C29.0029 21.2969 29.1965 21.0499 29.3935 20.792C30.996 18.6933 30.7524 15.7579 28.9826 13.7981C27.1588 11.7785 24.0236 11.6739 22.0693 13.5676Z"
+                      stroke="#898989"
+                      stroke-width="2.02054"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
                     />
-                  </div>
-                  <div class="text-container">
-                    <div class="heading">
-                      <h3>Instant Crush</h3>
-                    </div>
-                    <div class="description">
-                      <p>Daft Punk</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
+                  </svg>
+                </button>
+                <button class="btn-icon">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="20"
+                      height="20"
+                      rx="3"
+                      transform="matrix(1 0 0 -1 9.82715 31.3301)"
+                      stroke="#898989"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.8271 11.3301H27.8271C27.8271 9.67322 26.484 8.33008 24.8271 8.33008H14.8271C13.1703 8.33008 11.8271 9.67322 11.8271 11.3301Z"
+                      stroke="#898989"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M15.8271 21.3301H19.8271M23.8271 21.3301H19.8271M19.8271 21.3301V17.3301M19.8271 21.3301V25.3301"
+                      stroke="#898989"
+                      stroke-width="2.02054"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button class="btn-icon">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.3632 11.7861H14.5924C13.0426 11.7861 11.7861 13.0426 11.7861 14.5924C11.7861 16.1423 13.0426 17.3987 14.5924 17.3987H19.3632"
+                      stroke="#898989"
+                      stroke-width="2.3573"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M11.7861 23.0117L28.624 23.0117"
+                      stroke="#898989"
+                      stroke-width="2.3573"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.7861 28.624L28.624 28.624"
+                      stroke="#898989"
+                      stroke-width="2.3573"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M23.5732 14.3118H26.0989M28.6246 14.3118H26.0989M26.0989 14.3118V11.7861M26.0989 14.3118V16.8375"
+                      stroke="#898989"
+                      stroke-width="2.02054"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button class="btn-icon">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.2053 15.1543V25.0165M20.2053 25.0165L23.5729 21.6489M20.2053 25.0165L16.8377 21.6489"
+                      stroke="#898989"
+                      stroke-width="2.02054"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <circle
+                      cx="20.2054"
+                      cy="20.2062"
+                      r="9.26081"
+                      stroke="#898989"
+                      stroke-width="1.68378"
+                    />
+                  </svg>
+                </button>
+                <button class="btn-icon">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.69 22.0162V10.7401M20.69 10.7401L16.0469 15.3832M20.69 10.7401L25.3331 15.3832M28.9813 20.358V25.0011C28.9813 26.4664 27.7934 27.6543 26.3281 27.6543L15.052 27.6543C13.5866 27.6543 12.3987 26.4664 12.3987 25.0011V20.358"
+                      stroke="#898989"
+                      stroke-width="2.02054"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button class="btn-icon">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="11.7863"
+                      cy="20.2053"
+                      r="1.68378"
+                      fill="#898989"
+                    />
+                    <circle
+                      cx="20.2053"
+                      cy="20.2053"
+                      r="1.68378"
+                      fill="#898989"
+                    />
+                    <circle
+                      cx="28.6242"
+                      cy="20.2053"
+                      r="1.68378"
+                      fill="#898989"
+                    />
+                  </svg>
+                </button>
+              </div>
 
-              <article>
-                <a href="#" class="card-recent">
-                  <div class="img-container">
-                    <img src="./assets/images/daftpunk.png" alt="Get Lucky" />
-                  </div>
-                  <div class="text-container">
-                    <div class="heading">
-                      <h3>Around the world</h3>
-                    </div>
-                    <div class="description">
-                      <p>Daft Punk</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
+              <ul class="song-tags">
+                <li class="tag">Funk</li>
+                <li class="tag">Electronic music</li>
+                <li class="tag">Disco</li>
+                <li class="tag">Soft Rock</li>
+                <li class="tag">Progressive pop</li>
+              </ul>
 
-              <article>
-                <a href="#" class="card-recent">
-                  <div class="img-container">
-                    <img src="./assets/images/rockmix.png" alt="Rock Mix" />
+              <div class="song-artists">
+                <div class="artist-item">
+                  <img
+                    src="../assets/images/songs/image 4.png"
+                    alt="Daft Punk"
+                  />
+                  <div class="artist-names">
+                    <h6 class="artist-name">Daft Punk</h6>
+                    <p class="artist-role">Main artist</p>
                   </div>
-                  <div class="text-container">
-                    <div class="heading">
-                      <h3>Rock Mix</h3>
-                    </div>
+                </div>
+                <div class="artist-item">
+                  <img
+                    src="../assets/images/songs/image 4-1.png"
+                    alt="Pharrell Williams"
+                  />
+                  <div class="artist-names">
+                    <h6 class="artist-name">Pharrell Williams</h6>
+                    <p class="artist-role">Main artist, Composer, Lyricist</p>
                   </div>
-                </a>
-              </article>
-            </div>
-          </section>
-          <section class="forYou">
-            <div class="forYou-container">
-              <div class="title-group">
-                <h3 class="section-title">Made For You</h3>
-
-                <div class="navigation-controls">
-                  <button class="control-btn">
-                    <svg
-                      width="41"
-                      height="41"
-                      viewBox="0 0 41 41"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M21.8892 15.1543L16.8379 20.2056L21.8892 25.257"
-                        stroke="currentColor"
-                        stroke-width="2.3573"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-
-                  <button class="control-btn">
-                    <svg
-                      width="41"
-                      height="41"
-                      viewBox="0 0 41 41"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M18.5216 25.2578L23.5729 20.2065L18.5216 15.1551"
-                        stroke="currentColor"
-                        stroke-width="2.3573"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-
-                  <button class="control-btn more">
-                    <svg
-                      width="41"
-                      height="41"
-                      viewBox="0 0 41 41"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        cx="11.7865"
-                        cy="20.2072"
-                        r="1.68378"
-                        fill="currentColor"
-                      />
-                      <circle
-                        cx="20.2055"
-                        cy="20.2072"
-                        r="1.68378"
-                        fill="currentColor"
-                      />
-                      <circle
-                        cx="28.6243"
-                        cy="20.2072"
-                        r="1.68378"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </button>
+                </div>
+                <div class="artist-item">
+                  <img
+                    src="../assets/images/songs/image 4-2.png"
+                    alt="Nile Rodgers"
+                  />
+                  <div class="artist-names">
+                    <h6 class="artist-name">Nile Rodgers</h6>
+                    <p class="artist-role">Main artist, Composer, Lyricist</p>
+                  </div>
                 </div>
               </div>
-
-              <div class="forYou-wrapper">
-                <article>
-                  <a href="#" class="card-main magenta">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 6.png"
-                        alt="Discover Weekly"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Discover Weekly</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>Your weekly mixtape of fresh music.</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main cyan">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 7.png"
-                        alt="Daily Mix 1"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Daily Mix 1</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>Linkin Park, System Of A Down, Coal Chamber...</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main pink">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 8.png"
-                        alt="Daily Mix 2"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Daily Mix 2</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>Avril Lavigne, Lorde, Charli XCX and more</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main green">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 9.png"
-                        alt="Daily Mix 3"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Daily Mix 3</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>The Strokes, Martin Garrix, MGMT and more</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main pink2">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 10.png"
-                        alt="Daily Mix 4"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Daily Mix 4</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>Chuck Berry, Elvis Presley, Roy Orbison and more</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main blue">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 11.png"
-                        alt="Daily Mix 6"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Daily Mix 5</h3>
-
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>
-                          Frank Sinatra, Gerhard Trede, Dean Martin and more
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main yellow">
-                    <div class="img-container">
-                      <img src="./assets/images/image 17.png" alt="Nirvana" />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Nirvana Radio</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>The Strokes, Martin Garrix, MGMT and more</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main linen">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 16.png"
-                        alt="Fall Out Boy"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Fall Out Boy Ra...</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>
-                          With Panic! At The Disco, The All-American Rejects...
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main cream">
-                    <div class="img-container">
-                      <img src="./assets/images/image 15.png" alt="Adele" />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Adele Radio</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>With Sia, Sam Smith, Pink and more</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main azura">
-                    <div class="img-container">
-                      <img src="./assets/images/image 14.png" alt="Daft Punk" />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Daft Punk Radio</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>With Justice, The Chemical Brothers, ...</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main purple">
-                    <div class="img-container">
-                      <img src="./assets/images/image 13.png" alt="ABBA" />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>ABBA Radio</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>With Honey M., Bee Gees, Bonnie Tyler, and more</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main salad">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 12.png"
-                        alt="Daily Mix 3"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Daily Mix 6</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>One Direction, Avril Lavigne, Lorde, and more</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-              </div>
             </div>
-          </section>
-          <section class="topMixes">
-            <div class="topmixes-container">
-              <div class="title-group">
-                <h3 class="section-title">Your top mixes</h3>
+          </div>
 
-                <div class="navigation-controls">
-                  <button class="control-btn">
-                    <svg
-                      width="41"
-                      height="41"
-                      viewBox="0 0 41 41"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M21.8892 15.1543L16.8379 20.2056L21.8892 25.257"
-                        stroke="currentColor"
-                        stroke-width="2.3573"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
+          <div class="song-tabs">
+            <button class="tab">Lyrics</button>
+            <button class="tab">Credits</button>
+            <button class="tab">More like this</button>
+          </div>
 
-                  <button class="control-btn">
-                    <svg
-                      width="41"
-                      height="41"
-                      viewBox="0 0 41 41"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M18.5216 25.2578L23.5729 20.2065L18.5216 15.1551"
-                        stroke="currentColor"
-                        stroke-width="2.3573"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-
-                  <button class="control-btn more">
-                    <svg
-                      width="41"
-                      height="41"
-                      viewBox="0 0 41 41"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        cx="11.7865"
-                        cy="20.2072"
-                        r="1.68378"
-                        fill="currentColor"
-                      />
-                      <circle
-                        cx="20.2055"
-                        cy="20.2072"
-                        r="1.68378"
-                        fill="currentColor"
-                      />
-                      <circle
-                        cx="28.6243"
-                        cy="20.2072"
-                        r="1.68378"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="topMixes-wrapper">
-                <article>
-                  <a href="#" class="card-main lime">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 2.png"
-                        alt="Discover Weekly"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Rock Mix</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main sunlight">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 3.png"
-                        alt="Daily Mix 1"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Chill Mix</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>MF DOOM, Daft Punk, The Chainsmokers, and more</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main mint">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 4.png"
-                        alt="Daily Mix 2"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Pop Mix</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main indigo">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/daftpunkmix.png"
-                        alt="Daily Mix 3"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Daft Punk Mix</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>The Turtles, Van Morrison, ABBA and more</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main rose-petal">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 4-1.png"
-                        alt="Daily Mix 4"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>David Bowie Mix</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>Soft Cell, The Who and The Clash</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main apricot">
-                    <div class="img-container">
-                      <img src="./assets/images/david.png" alt="Daily Mix 6" />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Upbeat Mix</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>
-                          Kylie Minogue, Charli XCX, Cage The Elephant and...
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main forest">
-                    <div class="img-container">
-                      <img src="./assets/images/image 18.png" alt="Nirvana" />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>60s Mix</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>Chuck Berry, Skeeter David, Van Morrison and...</p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-
-                <article>
-                  <a href="#" class="card-main raspberry">
-                    <div class="img-container">
-                      <img
-                        src="./assets/images/image 19.png"
-                        alt="Fall Out Boy"
-                      />
-                    </div>
-                    <div class="text-container">
-                      <div class="heading">
-                        <h3>Fall Out Boy Ra...</h3>
-                        <span class="badge">50</span>
-                      </div>
-                      <div class="description">
-                        <p>
-                          With Panic! At The Disco, The All-American Rejects...
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-              </div>
+          <div class="tab-content">
+            <div class="sidebar-tools">
+              <button class="tool-btn active">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="23 4 23 10 17 10" />
+                  <polyline points="1 20 1 14 7 14" />
+                  <path
+                    d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+                  />
+                </svg>
+              </button>
+              <button class="tool-btn">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 8l6 6" />
+                  <path d="M4 14l6-6 2-3" />
+                  <path d="M2 5h12" />
+                  <path d="M7 2h1" />
+                  <path d="M22 22l-5-10-5 10" />
+                  <path d="M14 18h6" />
+                </svg>
+              </button>
+              <button class="tool-btn">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="7" width="20" height="15" rx="2" />
+                  <path d="M17 2l5 5-5 5" />
+                  <path d="M2 12h10" />
+                </svg>
+              </button>
+              <button class="tool-btn">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="4 7 4 4 20 4 20 7" />
+                  <line x1="9" y1="20" x2="15" y2="20" />
+                  <line x1="12" y1="4" x2="12" y2="20" />
+                </svg>
+              </button>
             </div>
-          </section>
 
-          <section class="favoriteArtists"></section>
-          <section class="AlbumsForYou"></section>
-          <section class="audioBooks"></section>
-          <section class="podcasts"></section>
-          <section class="episodes"></section>
-        </div>
+            <div class="lyrics">
+              <p class="lyric-line">Like the legend of the phoenix, huh</p>
+              <p class="lyric-line">All ends with beginnings</p>
+              <p class="lyric-line">What keeps the planet spinning, ah</p>
+              <p class="lyric-line">The force from the beginning, hm, look</p>
+              <p class="lyric-line">We've come too far</p>
+              <p class="lyric-line">To give up who we are</p>
+              <p class="lyric-line">So let's raise the bar</p>
+              <p class="lyric-line">And our cups to the stars</p>
+              <p class="lyric-line">She's up all night 'til the sun</p>
+              <p class="lyric-line">I'm up all night to get some</p>
+              <p class="lyric-line">She's up all night for good fun</p>
+              <p class="lyric-line">I'm up all night to get lucky</p>
+              <p class="lyric-line">We're up all night 'til the sun</p>
+              <p class="lyric-line">We're up all night to get some</p>
+              <p class="lyric-line">We're up all night for good fun</p>
+              <p class="lyric-line">We're up all night to get lucky</p>
+              <p class="lyric-line">We're up all night to get lucky</p>
+              <p class="lyric-line">We're up all night to get lucky</p>
+              <p class="lyric-line">We're up all night to get lucky</p>
+              <p class="lyric-line">We're up all night to get lucky</p>
+              <p class="lyric-line">The present has no rhythm</p>
+              <p class="lyric-line">Your gift keeps on giving</p>
+              <p class="lyric-line">What is this I'm feeling?</p>
+              <p class="lyric-line">If you want to leave, I'm with it</p>
+              <p class="lyric-line">We've come too far</p>
+              <p class="lyric-line">To give up who we are</p>
+              <p class="lyric-line">So let's raise the bar</p>
+              <p class="lyric-line">And our cups to the stars</p>
+            </div>
+          </div>
+        </section>
       </main>
 
       <!-- * popup menu section -->
@@ -1365,7 +1007,7 @@
               <a href="#" class="card-recent">
                 <div class="img-container">
                   <img
-                    src="./assets/images/sidepopup/friend4.png"
+                    src="../assets/images/sidepopup/friend4.png"
                     alt="Fiends logo red"
                   />
                 </div>
@@ -1377,7 +1019,7 @@
                     <ul>
                       <li>
                         <img
-                          src="./assets/images/sidepopup/Vector.png"
+                          src="../assets/images/sidepopup/Vector.png"
                           alt="vector image"
                         />
                       </li>
@@ -1395,7 +1037,7 @@
               <a href="#" class="card-recent">
                 <div class="img-container">
                   <img
-                    src="./assets/images/sidepopup/friend1.png"
+                    src="../assets/images/sidepopup/friend1.png"
                     alt="Fiends logo blue"
                   />
                 </div>
@@ -1407,7 +1049,7 @@
                     <ul>
                       <li>
                         <img
-                          src="./assets/images/sidepopup/Vector.png"
+                          src="../assets/images/sidepopup/Vector.png"
                           alt="vector image"
                         />
                       </li>
@@ -1425,7 +1067,7 @@
               <a href="#" class="card-recent">
                 <div class="img-container">
                   <img
-                    src="./assets/images/sidepopup/friend2.png"
+                    src="../assets/images/sidepopup/friend2.png"
                     alt="Fiends logo green"
                   />
                 </div>
@@ -1450,7 +1092,7 @@
               <a href="#" class="card-recent">
                 <div class="img-container">
                   <img
-                    src="./assets/images/sidepopup/friend3.png"
+                    src="../assets/images/sidepopup/friend3.png"
                     alt="Fiends logo red"
                   />
                 </div>
