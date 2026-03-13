@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/covers/GhostbustersCover.jpg"
+    />
     <title>BugBusters-fy</title>
   </head>
   <body>
@@ -406,9 +411,8 @@
                 </svg>
               </a>
             </li>
-
             <li>
-              <a href="#" class="liked-songs">
+              <a href="./html/library-liked-songs.html" class="liked-songs">
                 <svg
                   width="41"
                   height="41"
@@ -832,126 +836,102 @@
                     <div class="img-container">
                       <img
                         src="./assets/images/image 6.png"
-
                         alt="Discover Weekly"
                       />
                     </div>
                     <div class="text-container">
                       <div class="heading">
-
                         <h3>Discover Weekly</h3>
                         <span class="badge">50</span>
                       </div>
                       <div class="description">
                         <p>Your weekly mixtape of fresh music.</p>
-
                       </div>
                     </div>
                   </a>
                 </article>
 
                 <article>
-
                   <a href="#" class="card-main cyan">
                     <div class="img-container">
                       <img
                         src="./assets/images/image 7.png"
-
                         alt="Daily Mix 1"
                       />
                     </div>
                     <div class="text-container">
                       <div class="heading">
-
                         <h3>Daily Mix 1</h3>
                         <span class="badge">50</span>
                       </div>
                       <div class="description">
                         <p>Linkin Park, System Of A Down, Coal Chamber...</p>
-
                       </div>
                     </div>
                   </a>
                 </article>
 
                 <article>
-
                   <a href="#" class="card-main pink">
                     <div class="img-container">
                       <img
                         src="./assets/images/image 8.png"
-
                         alt="Daily Mix 2"
                       />
                     </div>
                     <div class="text-container">
                       <div class="heading">
-
                         <h3>Daily Mix 2</h3>
                         <span class="badge">50</span>
                       </div>
                       <div class="description">
                         <p>Avril Lavigne, Lorde, Charli XCX and more</p>
-
                       </div>
                     </div>
                   </a>
                 </article>
 
                 <article>
-
-         
                   <a href="#" class="card-main green">
                     <div class="img-container">
                       <img
                         src="./assets/images/image 9.png"
-
-              alt="Daily Mix 3"
+                        alt="Daily Mix 3"
                       />
-
-                                       </div>
+                    </div>
                     <div class="text-container">
                       <div class="heading">
-
                         <h3>Daily Mix 3</h3>
                         <span class="badge">50</span>
                       </div>
                       <div class="description">
                         <p>The Strokes, Martin Garrix, MGMT and more</p>
-
                       </div>
                     </div>
                   </a>
                 </article>
 
                 <article>
-
                   <a href="#" class="card-main pink2">
                     <div class="img-container">
                       <img
                         src="./assets/images/image 10.png"
-
                         alt="Daily Mix 4"
                       />
                     </div>
                     <div class="text-container">
                       <div class="heading">
-
                         <h3>Daily Mix 4</h3>
                         <span class="badge">50</span>
                       </div>
                       <div class="description">
                         <p>Chuck Berry, Elvis Presley, Roy Orbison and more</p>
-
                       </div>
                     </div>
                   </a>
                 </article>
 
                 <article>
-
-       
-
                   <a href="#" class="card-main blue">
                     <div class="img-container">
                       <img
@@ -967,11 +947,7 @@
                       </div>
                       <div class="description">
                         <p>
-
-                         
-
                           Frank Sinatra, Gerhard Trede, Dean Martin and more
-
                         </p>
                       </div>
                     </div>
@@ -979,8 +955,6 @@
                 </article>
 
                 <article>
-
-
                   <a href="#" class="card-main yellow">
                     <div class="img-container">
                       <img src="./assets/images/image 17.png" alt="Nirvana" />
@@ -992,21 +966,16 @@
                       </div>
                       <div class="description">
                         <p>The Strokes, Martin Garrix, MGMT and more</p>
-
                       </div>
                     </div>
                   </a>
                 </article>
 
                 <article>
-
-                  
-
                   <a href="#" class="card-main linen">
                     <div class="img-container">
                       <img
                         src="./assets/images/image 16.png"
-
                         alt="Fall Out Boy"
                       />
                     </div>
@@ -1097,7 +1066,7 @@
               </div>
             </div>
           </section>
-                <section class="topMixes">
+          <section class="topMixes">
             <div class="topmixes-container">
               <div class="title-group">
                 <h3 class="section-title">Your top mixes</h3>
@@ -1506,7 +1475,427 @@
           </div>
         </div>
       </aside>
-      <footer class="footer"></footer>
+
+      <footer class="footer">
+        <!---- Player ---->
+        <section class="player">
+          <div class="player-container">
+            <div class="player-wrapper">
+              <!---- Control section ---->
+
+              <div class="controllers">
+                <button id="play" class="play-btn">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M28.0942 18.2343C29.3511 18.9599 29.3511 20.774 28.0942 21.4997L18.1966 27.2141C16.9398 27.9397 15.3687 27.0327 15.3687 25.5814L15.3687 14.1526C15.3687 12.7013 16.9398 11.7943 18.1966 12.5199L28.0942 18.2343Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button id="pause" class="pause-btn">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.2046 14.2949V26.8681"
+                      stroke="currentColor"
+                      stroke-width="4.19106"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M24.5867 14.2949V26.8681"
+                      stroke="currentColor"
+                      stroke-width="4.19106"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <button id="prev" class="prev-btn">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.154 15.1523V25.255"
+                      stroke="currentColor"
+                      stroke-width="2.52568"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M17.1624 21.4925C16.2235 20.8902 16.2235 19.5181 17.1624 18.9157L24.1623 14.4253C25.1811 13.7717 26.5196 14.5033 26.5196 15.7137V24.6946C26.5196 25.905 25.1811 26.6365 24.1623 25.983L17.1624 21.4925Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button id="next" class="next-btn">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.2567 15.1523V25.255"
+                      stroke="currentColor"
+                      stroke-width="2.52568"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M23.2483 18.9157C24.1872 19.518 24.1872 20.8901 23.2483 21.4925L16.2484 25.9829C15.2296 26.6365 13.8912 25.9049 13.8912 24.6945L13.8912 15.7136C13.8912 14.5032 15.2296 13.7717 16.2484 14.4252L23.2483 18.9157Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button id="shaffle" class="shaffle-btn">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.1027 12.6271C11.6824 12.6271 13.1592 13.4102 14.0456 14.7177L14.8812 15.9503L16.0077 17.612M28.7491 25.92H23.8242C22.5038 25.92 21.236 25.4031 20.2921 24.4798L19.3635 23.5716M28.7491 25.92L25.2568 29.4648M28.7491 25.92L25.2568 22.3752"
+                      stroke="currentColor"
+                      stroke-width="2.02054"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.1027 27.9503C11.6863 27.9503 13.1708 27.18 14.0826 25.8853L20.2554 17.1194C21.2016 15.7758 22.7422 14.9764 24.3855 14.9764H28.7491M28.7491 14.9764L25.2568 11.4316M28.7491 14.9764L25.2568 18.5213"
+                      stroke="currentColor"
+                      stroke-width="2.02054"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button id="loop" class="loop-btn">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.996 26.0972H13.4703C11.6104 26.0972 10.1027 24.5895 10.1027 22.7297V15.9945C10.1027 14.1347 11.6104 12.627 13.4703 12.627H26.9406C28.8004 12.627 30.3081 14.1347 30.3081 15.9945V22.7297C30.3081 24.5895 28.8004 26.0972 26.9406 26.0972H20.2054M20.2054 26.0972L23.573 22.7297M20.2054 26.0972L23.573 29.4648"
+                      stroke="currentColor"
+                      stroke-width="2.02054"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <!---- Audio section ---->
+              <div class="track">
+                <div class="track-control">
+                  <span id="currentTime" class="item current-time">2:23</span>
+                  <input
+                    type="range"
+                    id="progress"
+                    class="item track-slider"
+                    value="0"
+                  />
+                  <span id="duration" class="item duration">4:45</span>
+                </div>
+                <audio id="audio"></audio>
+                <div class="volume-control">
+                  <button id="volumeIcon" class="item volume-icon">
+                    <svg
+                      width="41"
+                      height="41"
+                      viewBox="0 0 41 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_24_424)">
+                        <path
+                          d="M12.8558 23.8203C9.87736 22.3311 9.87736 18.081 12.8558 16.5918L21.5883 12.2256C22.0359 12.0018 22.5625 12.3268 22.5629 12.8271L22.5629 27.584C22.5629 28.0846 22.036 28.4102 21.5883 28.1865L12.8558 23.8203Z"
+                          stroke="currentColor"
+                          stroke-width="2.02054"
+                        />
+                        <path
+                          d="M26.9406 25.2578C27.7294 25.0427 28.4588 24.5653 29.04 23.8699C29.852 22.8983 30.3082 21.5805 30.3082 20.2065C30.3082 18.8324 29.852 17.5146 29.04 16.543C28.4588 15.8476 27.7294 15.3703 26.9406 15.1551"
+                          stroke="currentColor"
+                          stroke-width="1.68378"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M26.0987 19.6957C26.0987 19.5131 26.2522 19.3593 26.4208 19.4291C26.523 19.4714 26.6158 19.5335 26.694 19.6116C26.7722 19.6898 26.8342 19.7826 26.8765 19.8848C26.9188 19.9869 26.9406 20.0964 26.9406 20.2069C26.9406 20.3175 26.9188 20.427 26.8765 20.5291C26.8342 20.6313 26.7722 20.7241 26.694 20.8022C26.6158 20.8804 26.523 20.9424 26.4208 20.9847C26.2522 21.0546 26.0987 20.9008 26.0987 20.7182L26.0987 20.2069L26.0987 19.6957Z"
+                          fill="#898989"
+                          stroke="currentColor"
+                          stroke-width="0.841892"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_24_424">
+                          <rect
+                            width="23.573"
+                            height="23.573"
+                            fill="white"
+                            transform="translate(8.41895 8.41992)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <input
+                    type="range"
+                    id="volumeSlider"
+                    class="item volume-slider"
+                    min="0"
+                    max="1"
+                    step="0.1"
+                    value="1"
+                  />
+                </div>
+              </div>
+              <article class="media-info">
+                <a href="#" class="card-recent">
+                  <div class="img-container">
+                    <img id="cover" src="" alt="" />
+                  </div>
+                  <div class="text-container">
+                    <div class="heading">
+                      <h3 id="title"></h3>
+                    </div>
+                    <div class="description">
+                      <p id="author"></p>
+                      <p id="album"></p>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <!---- Action section ---->
+              <div class="actions">
+                <div class="metadata">
+                  <button id="like" class="like-btn active">
+                    <svg
+                      width="41"
+                      height="41"
+                      viewBox="0 0 41 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22.0692 13.5685L20.2054 15.3745L18.3415 13.5685C16.3872 11.6749 13.252 11.7794 11.4282 13.7991C9.65841 15.7589 9.41476 18.6943 11.0173 20.793C11.2143 21.0509 11.4079 21.2979 11.5922 21.524C12.7586 22.9549 15.3036 25.4539 16.5788 26.7949C17.5209 27.7857 18.3677 28.6121 19.0057 29.214C19.6794 29.8496 20.7193 29.8357 21.3943 29.2014C22.5707 28.0961 24.3746 26.3743 25.6453 25.0379C26.9204 23.6969 27.6521 22.9549 28.8186 21.524C29.0028 21.2979 29.1965 21.0509 29.3934 20.793C30.996 18.6943 30.7523 15.7589 28.9826 13.7991C27.1587 11.7794 24.0236 11.6749 22.0692 13.5685Z"
+                        stroke="currentColor"
+                        stroke-width="2.02054"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <button id="add-to-playlist" class="add-to-playlist-btn">
+                    <svg
+                      width="41"
+                      height="41"
+                      viewBox="0 0 41 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="20"
+                        height="20"
+                        rx="3"
+                        transform="matrix(1 0 0 -1 9.82703 31.3301)"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.827 11.3301H27.827C27.827 9.67322 26.4839 8.33008 24.827 8.33008H14.827C13.1702 8.33008 11.827 9.67322 11.827 11.3301Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.827 21.3301H19.827M23.827 21.3301H19.827M19.827 21.3301V17.3301M19.827 21.3301V25.3301"
+                        stroke="currentColor"
+                        stroke-width="2.02054"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <button id="lirics" class="lirics-btn">
+                    <svg
+                      width="41"
+                      height="41"
+                      viewBox="0 0 41 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.0864 14.0762H23.0864"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M11.0864 21.0762H19.0864"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M11.0864 28.0762H19.0864"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M29.0864 13.0762V22.01M29.0864 22.01V26.6757C29.0864 27.4256 28.5537 28.0748 27.8037 28.0762C26.3223 28.0789 24.0864 27.6431 24.0864 24.9879C24.0864 21.0173 29.0864 22.01 29.0864 22.01Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <button id="device" class="device-btn">
+                    <svg
+                      width="41"
+                      height="41"
+                      viewBox="0 0 41 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="17.2587"
+                        y="11.3672"
+                        width="11.7865"
+                        height="17.6797"
+                        rx="2.94662"
+                        stroke="currentColor"
+                        stroke-width="2.06263"
+                      />
+                      <circle
+                        cx="23.152"
+                        cy="23.1537"
+                        r="2.94662"
+                        fill="#898989"
+                      />
+                      <circle
+                        cx="23.152"
+                        cy="15.7858"
+                        r="1.47331"
+                        fill="#898989"
+                      />
+                      <circle
+                        cx="12.8389"
+                        cy="27.5729"
+                        r="1.47331"
+                        fill="#898989"
+                      />
+                      <path
+                        d="M13.5755 22.4157H12.8389C12.0252 22.4157 11.3655 21.7561 11.3655 20.9424V15.7858C11.3655 14.9721 12.0252 14.3125 12.8389 14.3125H13.5755"
+                        stroke="currentColor"
+                        stroke-width="2.06263"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <button id="more" class="more-btn">
+                    <svg
+                      width="41"
+                      height="41"
+                      viewBox="0 0 41 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="11.7865"
+                        cy="20.2072"
+                        r="1.68378"
+                        fill="currentColor"
+                      />
+                      <circle
+                        cx="20.2054"
+                        cy="20.2072"
+                        r="1.68378"
+                        fill="currentColor"
+                      />
+                      <circle
+                        cx="28.6242"
+                        cy="20.2072"
+                        r="1.68378"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="utilities">
+                  <button id="hide" class="hide-btn">
+                    <svg
+                      width="41"
+                      height="41"
+                      viewBox="0 0 41 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.2052 10.9453C25.3197 10.9453 29.4658 15.0915 29.4659 20.2061C29.4659 22.5553 28.5928 24.699 27.1515 26.332C25.4533 28.256 22.971 29.4668 20.2052 29.4668C15.0906 29.4667 10.9444 25.3206 10.9444 20.2061C10.9445 17.8337 11.8359 15.6712 13.3028 14.0322C14.9997 12.1365 17.4628 10.9454 20.2052 10.9453Z"
+                        stroke="currentColor"
+                        stroke-width="1.68378"
+                      />
+                    </svg>
+                  </button>
+                  <button id="queue" class="queue-btn">
+                    <svg
+                      width="41"
+                      height="41"
+                      viewBox="0 0 41 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.7865 14.5915C11.7865 13.0416 13.0429 11.7852 14.5928 11.7852H25.818C27.3679 11.7852 28.6243 13.0416 28.6243 14.5915C28.6243 16.1413 27.3679 17.3978 25.818 17.3978H14.5928C13.0429 17.3978 11.7865 16.1413 11.7865 14.5915Z"
+                        stroke="currentColor"
+                        stroke-width="2.3573"
+                      />
+                      <path
+                        d="M11.7865 23.0117L28.6243 23.0117"
+                        stroke="currentColor"
+                        stroke-width="2.3573"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.7865 28.623L28.6243 28.623"
+                        stroke="currentColor"
+                        stroke-width="2.3573"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
