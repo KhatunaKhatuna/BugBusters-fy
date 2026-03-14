@@ -3,7 +3,7 @@
 
 .filter {
   @include mixins.flex-prop($align: center, $justify: space-between);
-  padding: 0 1.5rem;
+  padding-left: 2.5rem;
   font-size: 1.2rem;
   background-color: variables.$bg-primary-mob;
   position: sticky;
@@ -29,7 +29,6 @@
     &.filter-icon {
       // @include mixins.flex-prop($align: center, $justify: center);
       background-color: transparent;
-
       @include mixins.interactiveIcon;
     }
   }
