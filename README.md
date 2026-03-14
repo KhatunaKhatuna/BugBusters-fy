@@ -138,7 +138,7 @@ project-root
 
 This project was developed as a team collaboration project.
 
-## Task Planning
+### Task Planning
 
 At the beginning of the project the team agreed on:
 
@@ -148,9 +148,7 @@ At the beginning of the project the team agreed on:
 - coding conventions
 - Tasks were managed using GitHub Issues / Task Manager.
 
----
-
-## Development Workflow
+### Development Workflow
 
 The development process followed these steps:
 
@@ -162,9 +160,7 @@ The development process followed these steps:
 - Code review by team members
 - Merge into main branch
 
----
-
-## Daily Meetings
+### Daily Meetings
 
 The team held two short meetings each day to discuss progress.
 Topics discussed during meetings included:
@@ -177,7 +173,7 @@ Topics discussed during meetings included:
 
 ---
 
-Screenshots
+## Screenshots
 
 ### Desktop View
 
@@ -188,6 +184,12 @@ Screenshots
 ### Mobile View
 
 ![Mobile Screenshot](./assets/screenshots/mobile.png)
+
+---
+
+## 🌐 Live Demo
+
+[View Live Demo](https://bug-busters-fy.vercel.app/)
 
 ---
 
