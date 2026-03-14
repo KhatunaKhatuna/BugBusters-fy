@@ -5,9 +5,8 @@
 
 .forYou-container {
   @include mixins.flex-prop($direction: column);
-  padding: 0 1.5rem;
-  padding-top: 3rem;
-
+  padding: 0 2.5rem;
+  margin-bottom: 3rem;
   .title-group {
     @include mixins.flex-prop($align: center, $justify: space-between);
     width: 100%;
@@ -51,13 +50,13 @@
     overflow-x: auto;
     overflow-y: visible;
     scrollbar-width: none;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
 
     &::-webkit-scrollbar {
       display: none;
     }
     .card-main {
+      @include mixins.flex-prop($direction: column, $gap: 0.5rem);
       .img-container {
         @include mixins.cardBeforeEffect;
       }
