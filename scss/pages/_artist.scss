@@ -157,12 +157,14 @@
 
     .main-content-wrapper {
       @include mixins.flex-prop($justify: space-between);
+      padding: 4rem 3.8rem 0 4rem;
 
       .artist-pick-wrapper {
         @include mixins.flex-prop(3rem, $direction: column);
-        margin: 4rem 4rem 0 0;
+        margin-top: 4rem;
         width: 32rem;
         flex-shrink: 0;
+        padding-right: 1.5rem;
 
         .tags {
           @include mixins.flex-prop(1rem);
@@ -229,7 +231,7 @@
 
   .tracklist {
     width: 100%;
-    min-width: 90rem;
+    min-width: 80rem;
 
     &-table {
       width: 100%;
@@ -261,9 +263,11 @@
           /* title cell track details */
           &-title-cell {
             a {
-              display: flex;
-              align-items: center;
-              gap: 0.5rem;
+              @include mixins.flex-prop(
+                0.5rem,
+                $direction: row,
+                $align: center
+              );
             }
           }
           &-cover {
