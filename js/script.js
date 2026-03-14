@@ -48,25 +48,25 @@ const volumeOff = `
 
 const songs = [
   {
-    audio: "assets/audio/Daft Punk - Get Lucky.mp3",
+    audio: "../assets/audio/Daft Punk - Get Lucky.mp3",
     title: "Get Lucky",
     author: "Daft Punk",
     album: "Random Access Memories",
-    cover: "assets/images/daftpunk.png",
+    cover: "../assets/images/daftpunk.png",
   },
   {
-    audio: "assets/audio/Ghostbusters .mp3",
+    audio: "../assets/audio/Ghostbusters .mp3",
     title: "Ghostbusters",
     author: "Ray Parker Jr.",
     album: "Ghostbusters",
-    cover: "assets/images/covers/GhostbustersCover.jpg",
+    cover: "../assets/images/covers/GhostbustersCover.jpg",
   },
   {
-    audio: "assets/audio/DjBudzi.mp3",
+    audio: "../assets/audio/DjBudzi.mp3",
     title: "აბობოქრებულ ზღვაში გატარებ",
     author: "Dj Budzi.",
     album: "აბობოქრებულ ზღვაში",
-    cover: "assets/images/covers/DjBudzi.jpeg",
+    cover: "../assets/images/covers/DjBudzi.jpeg",
   },
 ];
 
