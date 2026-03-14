@@ -183,6 +183,8 @@ Screenshots
 
 ![Desktop Screenshot](./assets/screenshots/desktop.png)
 
+![Desktop Screenshot](./assets/screenshots/desktop2.png)
+
 ### Mobile View
 
 ![Mobile Screenshot](./assets/screenshots/mobile.png)
