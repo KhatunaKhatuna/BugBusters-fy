@@ -3,10 +3,9 @@
 
 .filter {
   @include mixins.flex-prop($align: center, $justify: space-between);
-  padding: 0 1.5rem;
+  padding-left: 2.5rem;
   font-size: 1.2rem;
-
-  //add this to filter  to stick
+  background-color: variables.$bg-primary-mob;
   position: sticky;
   z-index: 3;
   top: 0;
@@ -30,7 +29,6 @@
     &.filter-icon {
       // @include mixins.flex-prop($align: center, $justify: center);
       background-color: transparent;
-
       @include mixins.interactiveIcon;
     }
   }
@@ -38,6 +36,7 @@
 
 @media (min-width: 920px) {
   .filter {
+    background-color: variables.$bg-primary-desk;
     button.active {
       color: variables.$bg-primary-mob;
       background-color: variables.$color-active-desk;
