@@ -12,7 +12,7 @@
   width: 14rem;
 
   a {
-    @include mixins.flex-prop($direction: column);
+    @include mixins.flex-prop(0.6rem, $direction: column);
   }
 
   .img-container {
@@ -20,6 +20,7 @@
     // @@include mixins.cardBeforeEffect
     // use parameters: one or two
     border-radius: 0.6rem;
+
     img {
       // you should use this mixin in your code under the img tag to define img shape
       // @include mixins.imageShaper
@@ -31,11 +32,13 @@
 
   .text-container {
     @include mixins.flex-prop($gap: 0.8rem, $direction: column);
-    padding-block: 0.6rem;
+    padding-bottom: 0.6rem;
+
     .heading {
       @include mixins.flex-prop($justify: space-between);
       font-size: 1.2rem;
       color: variables.$color-active-desk;
+      font-family: variables.$ff-satoshi-medium;
     }
     .description {
       p {
