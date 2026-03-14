@@ -4,10 +4,5 @@
 .swp
 
 # Ignore generated css files
-/assets/css/
-/css
-/*.css
-*.css.map
-
 
 /node_modules
