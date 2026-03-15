@@ -603,12 +603,18 @@
 
       <main class="main">
         <div class="main-container">
-          <div class="library">
-            <div class="library-header">
-              <div class="library-header-search">
-                <nav class="library-nav">
-                  <div class="view-type">
-                    <button class="list-view">
+          <div class="search-page">
+            <div class="library">
+              <div class="library-header">
+                <div class="library-header-search">
+                  <div class="library-search">
+                    <input
+                      id="search-bar"
+                      name="search-bar"
+                      type="text"
+                      placeholder="Search..."
+                    />
+                    <button class="searchbar-nav" type="search-button">
                       <svg
                         width="41"
                         height="41"
@@ -617,92 +623,47 @@
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M16.584 26.3298H28.584"
+                          d="M24.7357 24.361C26.2733 22.7925 27.2214 20.644 27.2214 18.274C27.2214 13.4715 23.3282 9.57837 18.5257 9.57837C13.7233 9.57837 9.83008 13.4715 9.83008 18.274C9.83008 23.0765 13.7233 26.9697 18.5257 26.9697C20.9582 26.9697 23.1575 25.9709 24.7357 24.361ZM24.7357 24.361L29.8301 29.5784"
                           stroke="currentColor"
-                          stroke-width="2"
+                          stroke-width="2.02054"
                           stroke-linecap="round"
-                        />
-                        <path
-                          d="M11 26.3298H12"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                        />
-                        <path
-                          d="M16.584 20.3298H28.584"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                        />
-                        <path
-                          d="M11 20.3298H12"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                        />
-                        <path
-                          d="M16.584 14.3298H28.584"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                        />
-                        <path
-                          d="M11 14.3298H12"
-                          stroke="#898989"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                    </button>
-                    <button class="grid-view">
-                      <svg
-                        width="41"
-                        height="41"
-                        viewBox="0 0 41 41"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect
-                          x="10.3351"
-                          y="10.0807"
-                          width="8.18182"
-                          height="8.18182"
-                          rx="2"
-                          stroke="currentColor"
-                          stroke-width="2"
-                        />
-                        <rect
-                          x="10.3351"
-                          y="21.8991"
-                          width="8.18182"
-                          height="8.18182"
-                          rx="2"
-                          stroke="currentColor"
-                          stroke-width="2"
-                        />
-                        <rect
-                          x="22.1533"
-                          y="10.0807"
-                          width="8.18182"
-                          height="8.18182"
-                          rx="2"
-                          stroke="currentColor"
-                          stroke-width="2"
-                        />
-                        <rect
-                          x="22.1533"
-                          y="21.8991"
-                          width="8.18182"
-                          height="8.18182"
-                          rx="2"
-                          stroke="currentColor"
-                          stroke-width="2"
-                        />
+                        ></path>
                       </svg>
                     </button>
                   </div>
-                  <div class="group-type">
-                    <button class="recents">
+                  <button class="add-more">
+                    <svg
+                      width="27"
+                      height="21"
+                      viewBox="0 0 27 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 7.25V16.7407C1 18.2749 2.24365 19.5185 3.77778 19.5185H23.2222C24.7563 19.5185 26 18.2749 26 16.7407V7.25C26 5.71588 24.7563 4.47222 23.2222 4.47222H21.7723C21.2386 4.47222 20.7308 4.24192 20.3791 3.84036L18.4452 1.63187C18.0936 1.23031 17.5858 1 17.052 1H9.61015C9.0764 1 8.5686 1.23031 8.21696 1.63187L6.28304 3.84036C5.9314 4.24192 5.4236 4.47222 4.88985 4.47222H3.77778C2.24365 4.47222 1 5.71588 1 7.25Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <circle
+                        cx="13.5"
+                        cy="10.7223"
+                        r="4.16667"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <section class="recent-search home-section">
+              <div class="home-section-container">
+                <div class="title-group">
+                  <h3 class="section-title">Recent searches</h3>
+                  <div class="navigation-controls">
+                    <button class="control-btn">
                       <svg
                         width="41"
                         height="41"
@@ -711,23 +672,16 @@
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M13.4327 26.8049V13.5287M13.4327 13.5287L18.0759 18.1718M13.4327 13.5287L8.78962 18.1718"
+                          d="M21.8892 15.1543L16.8379 20.2056L21.8892 25.257"
                           stroke="currentColor"
-                          stroke-width="2.02054"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M26.4328 13.8049L26.4328 27.081M26.4328 27.081L21.7897 22.4379M26.4328 27.081L31.076 22.4379"
-                          stroke="currentColor"
-                          stroke-width="2.02054"
+                          stroke-width="2.3573"
                           stroke-linecap="round"
                           stroke-linejoin="round"
                         />
                       </svg>
-                      <span>Recent</span>
                     </button>
-                    <button class="group-icon">
+
+                    <button class="control-btn">
                       <svg
                         width="41"
                         height="41"
@@ -736,36 +690,99 @@
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M29.3351 14.081L11.3351 14.081"
+                          d="M18.5216 25.2578L23.5729 20.2065L18.5216 15.1551"
                           stroke="currentColor"
-                          stroke-width="2"
+                          stroke-width="2.3573"
                           stroke-linecap="round"
-                        />
-                        <path
-                          d="M25.8273 20.081H15.8273"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                        />
-                        <path
-                          d="M22.8273 26.081H18.8273"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
-                      <span>Group</span>
+                    </button>
+
+                    <button class="control-btn more">
+                      <svg
+                        width="41"
+                        height="41"
+                        viewBox="0 0 41 41"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="11.7865"
+                          cy="20.2072"
+                          r="1.68378"
+                          fill="currentColor"
+                        />
+                        <circle
+                          cx="20.2055"
+                          cy="20.2072"
+                          r="1.68378"
+                          fill="currentColor"
+                        />
+                        <circle
+                          cx="28.6243"
+                          cy="20.2072"
+                          r="1.68378"
+                          fill="currentColor"
+                        />
+                      </svg>
                     </button>
                   </div>
-                </nav>
-                <div class="library-search">
-                  <input
-                    id="search-bar"
-                    name="search-bar"
-                    type="text"
-                    placeholder="Search..."
-                  />
-                  <button class="searchbar-nav" type="search-button">
+                </div>
+                <div class="card-wrapper">
+                  <article class="card-main">
+                    <a href="#">
+                      <div class="img-container">
+                        <img
+                          src="../assets/images/favoriteArtists/image 9.png"
+                          alt="Guns N’ Roses"
+                        />
+                      </div>
+                      <div class="text-container">
+                        <div class="heading">
+                          <h3>Guns N’ Roses</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <article class="card-main">
+                    <a href="#">
+                      <div class="img-container">
+                        <img
+                          src="../assets/images/favoriteArtists/image 3.png"
+                          alt="Daft Punk"
+                        />
+                      </div>
+                      <div class="text-container">
+                        <div class="heading">
+                          <h3>Daft Punk</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <article class="card-main">
+                    <a href="#">
+                      <div class="img-container">
+                        <img
+                          src="../assets/images/favoriteArtists/image 4.png"
+                          alt="Discover Weekly"
+                        />
+                      </div>
+                      <div class="text-container">
+                        <div class="heading">
+                          <h3>David Bowie</h3>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <section class="search discover">
+              <div class="title-group">
+                <h3 class="section-title">Discover</h3>
+                <div class="navigation-controls">
+                  <button class="control-btn">
                     <svg
                       width="41"
                       height="41"
@@ -774,331 +791,288 @@
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M24.7357 24.361C26.2733 22.7925 27.2214 20.644 27.2214 18.274C27.2214 13.4715 23.3282 9.57837 18.5257 9.57837C13.7233 9.57837 9.83008 13.4715 9.83008 18.274C9.83008 23.0765 13.7233 26.9697 18.5257 26.9697C20.9582 26.9697 23.1575 25.9709 24.7357 24.361ZM24.7357 24.361L29.8301 29.5784"
+                        d="M21.8892 15.1543L16.8379 20.2056L21.8892 25.257"
                         stroke="currentColor"
-                        stroke-width="2.02054"
+                        stroke-width="2.3573"
                         stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <button class="control-btn">
+                    <svg
+                      width="41"
+                      height="41"
+                      viewBox="0 0 41 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.5216 25.2578L23.5729 20.2065L18.5216 15.1551"
+                        stroke="currentColor"
+                        stroke-width="2.3573"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                       />
                     </svg>
                   </button>
                 </div>
-                <button id="add-more" class="add-more">
-                  <svg
-                    width="41"
-                    height="41"
-                    viewBox="0 0 41 41"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20.2052 13.0618V20.2054M20.2052 27.3491V20.2054M20.2052 20.2054L13.0615 20.2054M20.2052 20.2054H27.3489"
-                      stroke="currentColor"
-                      stroke-width="2.02054"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
               </div>
-            </div>
+              <div class="search-wrapper">
+                <article class="card-search dark-blue">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/1.png"
+                        alt="Made For You"
+                      />
+                    </div>
+
+                    <h3>Made For You</h3>
+                  </a>
+                </article>
+
+                <article class="card-search orange">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/2.png"
+                        alt="New
+    Releases"
+                      />
+                    </div>
+                    <h3>New Releases</h3>
+                  </a>
+                </article>
+
+                <article class="card-search dark-blue">
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="../assets/images/search/3.png" alt="Made For" />
+                    </div>
+                    <h3>Spotify Classics</h3>
+                  </a>
+                </article>
+
+                <article class="card-search light-purple">
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="../assets/images/search/4.png" alt="Charts" />
+                    </div>
+                    <h3>Charts</h3>
+                  </a>
+                </article>
+
+                <article class="card-search dark-pink">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/5.png"
+                        alt="Get Lucky"
+                      />
+                    </div>
+
+                    <div class="heading">
+                      <h3>Charts</h3>
+                    </div>
+                  </a>
+                </article>
+
+                <article class="card-search light-purple">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/6.png"
+                        alt="Daily Mix 1"
+                      />
+                    </div>
+
+                    <div class="heading">
+                      <h3>Daily Mix 1</h3>
+                    </div>
+                  </a>
+                </article>
+
+                <article class="card-search dark-grey">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/7.png"
+                        alt="Instant Crush"
+                      />
+                    </div>
+
+                    <div class="heading">
+                      <h3>Instant Crush</h3>
+                    </div>
+                  </a>
+                </article>
+
+                <article class="card-search orange">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/11.png"
+                        alt="Get Lucky"
+                      />
+                    </div>
+
+                    <div class="heading">
+                      <h3>Around the world</h3>
+                    </div>
+                  </a>
+                </article>
+              </div>
+            </section>
+            <section class="search Ganres">
+              <div class="title-group">
+                <h3 class="section-title">Genres</h3>
+                <div class="navigation-controls">
+                  <button class="control-btn">
+                    <svg
+                      width="41"
+                      height="41"
+                      viewBox="0 0 41 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21.8892 15.1543L16.8379 20.2056L21.8892 25.257"
+                        stroke="currentColor"
+                        stroke-width="2.3573"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <button class="control-btn">
+                    <svg
+                      width="41"
+                      height="41"
+                      viewBox="0 0 41 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.5216 25.2578L23.5729 20.2065L18.5216 15.1551"
+                        stroke="currentColor"
+                        stroke-width="2.3573"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="search-wrapper">
+                <article class="card-search darkgreen">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/1.png"
+                        alt="Made For You"
+                      />
+                    </div>
+
+                    <h3>Made For You</h3>
+                  </a>
+                </article>
+
+                <article class="card-search light-purple">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/2.png"
+                        alt="New
+    Releases"
+                      />
+                    </div>
+                    <h3>New Releases</h3>
+                  </a>
+                </article>
+
+                <article class="card-search red">
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="../assets/images/search/3.png" alt="Made For" />
+                    </div>
+                    <h3>Spotify Classics</h3>
+                  </a>
+                </article>
+
+                <article class="card-search dark-purple">
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="../assets/images/search/4.png" alt="Charts" />
+                    </div>
+                    <h3>Charts</h3>
+                  </a>
+                </article>
+
+                <article class="card-search dark-blue">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/5.png"
+                        alt="Get Lucky"
+                      />
+                    </div>
+
+                    <div class="heading">
+                      <h3>Charts</h3>
+                    </div>
+                  </a>
+                </article>
+
+                <article class="card-search orange">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/6.png"
+                        alt="Daily Mix 1"
+                      />
+                    </div>
+
+                    <div class="heading">
+                      <h3>Daily Mix 1</h3>
+                    </div>
+                  </a>
+                </article>
+
+                <article class="card-search light-green">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/7.png"
+                        alt="Instant Crush"
+                      />
+                    </div>
+
+                    <div class="heading">
+                      <h3>Instant Crush</h3>
+                    </div>
+                  </a>
+                </article>
+
+                <article class="card-search light-blue">
+                  <a href="#">
+                    <div class="img-container">
+                      <img
+                        src="../assets/images/search/11.png"
+                        alt="Get Lucky"
+                      />
+                    </div>
+
+                    <div class="heading">
+                      <h3>Around the world</h3>
+                    </div>
+                  </a>
+                </article>
+              </div>
+            </section>
           </div>
-
-          <!--  *liked-songs list -->
-
-          <section class="library-liked-songs">
-            <div class="library-songs">
-              <div class="tracklist">
-                <table class="tracklist-table">
-                  <thead>
-                    <tr>
-                      <th class="tracklist-index">#</th>
-                      <th class="tracklist-title">Title</th>
-                      <th class="tracklist-album">Album</th>
-                      <th class="tracklist-duration">Duration</th>
-                      <th class="tracklist-like"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="track active">
-                      <td class="track-index">1</td>
-
-                      <td class="track-title-cell">
-                        <article>
-                          <a href="" class="">
-                            <img
-                              src="../assets/images/daftpunk.png"
-                              alt="Daft Punk"
-                              class="track-cover"
-                            />
-                            <div class="track-meta">
-                              <span class="track-name">Get Lucky</span>
-                              <span class="track-artist">Daft Punk</span>
-                            </div>
-                          </a>
-                        </article>
-                      </td>
-
-                      <td class="track-album">Random Access Memories</td>
-                      <td class="track-duration">4:35</td>
-                      <td class="track-like">
-                        <svg
-                          width="23"
-                          height="20"
-                          viewBox="0 0 23 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z"
-                            stroke="currentColor"
-                            stroke-width="2.02054"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </td>
-                    </tr>
-                    <tr class="track active">
-                      <td class="track-index">2</td>
-
-                      <td class="track-title-cell">
-                        <article>
-                          <a href="" class="">
-                            <img
-                              src="../assets/images/daftpunk.png"
-                              alt="daft punk"
-                              class="track-cover"
-                            />
-                            <div class="track-meta">
-                              <span class="track-name">Instant Crush</span>
-                              <span class="track-artist"
-                                >Daft Punk, Julian Casablancas</span
-                              >
-                            </div>
-                          </a>
-                        </article>
-                      </td>
-
-                      <td class="track-album">Random Access Memories</td>
-                      <td class="track-duration">5:37</td>
-                      <td class="track-like">
-                        <svg
-                          width="23"
-                          height="20"
-                          viewBox="0 0 23 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z"
-                            stroke="currentColor"
-                            stroke-width="2.02054"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </td>
-                    </tr>
-                    <tr class="track active">
-                      <td class="track-index">3</td>
-
-                      <td class="track-title-cell">
-                        <article>
-                          <a href="" class="">
-                            <img
-                              src="../assets/images/library card images/list/b314c4a82cc6b04ebd18ca4cfdac886863aeea9d.png"
-                              alt="Gorillaz"
-                              class="track-cover"
-                            />
-                            <div class="track-meta">
-                              <span class="track-name">On Melancholy Hill</span>
-                              <span class="track-artist">Gorillaz</span>
-                            </div>
-                          </a>
-                        </article>
-                      </td>
-
-                      <td class="track-album">Plastic Beach</td>
-                      <td class="track-duration">3:53</td>
-                      <td class="track-like">
-                        <svg
-                          width="23"
-                          height="20"
-                          viewBox="0 0 23 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z"
-                            stroke="currentColor"
-                            stroke-width="2.02054"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </td>
-                    </tr>
-                    <tr class="track active">
-                      <td class="track-index">4</td>
-
-                      <td class="track-title-cell">
-                        <article>
-                          <a href="" class="">
-                            <img
-                              src="../assets/images/library card images/list/efa52851ee02f497b9c419a58d88a0a4a218db94.png"
-                              alt="Soft Cell"
-                              class="track-cover"
-                            />
-                            <div class="track-meta">
-                              <span class="track-name">Tainted Love</span>
-                              <span class="track-artist">Soft Cell</span>
-                            </div>
-                          </a>
-                        </article>
-                      </td>
-
-                      <td class="track-album">Non-Stop Erotic Cabaret</td>
-                      <td class="track-duration">2:33</td>
-                      <td class="track-like active">
-                        <svg
-                          width="23"
-                          height="20"
-                          viewBox="0 0 23 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z"
-                            stroke="currentColor"
-                            stroke-width="2.02054"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </td>
-                    </tr>
-                    <tr class="track active">
-                      <td class="track-index">5</td>
-
-                      <td class="track-title-cell">
-                        <article>
-                          <a href="" class="">
-                            <img
-                              src="../assets/images/library card images/list/f8333858efa455a824b262091909b732d2a58e7d.png"
-                              alt="Daft Punk"
-                              class="track-cover"
-                            />
-                            <div class="track-meta">
-                              <span class="track-name">One More Time</span>
-                              <span class="track-artist">Daft Punk</span>
-                            </div>
-                          </a>
-                        </article>
-                      </td>
-
-                      <td class="track-album">Discovery</td>
-                      <td class="track-duration">5:20</td>
-                      <td class="track-like active">
-                        <svg
-                          width="23"
-                          height="20"
-                          viewBox="0 0 23 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z"
-                            stroke="currentColor"
-                            stroke-width="2.02054"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </td>
-                    </tr>
-                    <tr class="track active">
-                      <td class="track-index">6</td>
-
-                      <td class="track-title-cell">
-                        <article>
-                          <a href="" class="">
-                            <img
-                              src="../assets/images/library card images/list/e8c9b97d8c6bb16682a367b25cccd24957402043.png"
-                              alt="MGMT"
-                              class="track-cover"
-                            />
-                            <div class="track-meta">
-                              <span class="track-name">Electric Feel</span>
-                              <span class="track-artist">MGMT</span>
-                            </div>
-                          </a>
-                        </article>
-                      </td>
-
-                      <td class="track-album">Oracular Spectacular</td>
-                      <td class="track-duration">3:49</td>
-                      <td class="track-like active">
-                        <svg
-                          width="23"
-                          height="20"
-                          viewBox="0 0 23 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z"
-                            stroke="currentColor"
-                            stroke-width="2.02054"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </td>
-                    </tr>
-                    <tr class="track active">
-                      <td class="track-index">7</td>
-
-                      <td class="track-title-cell">
-                        <article>
-                          <a href="" class="">
-                            <img
-                              src="../assets/images/daftpunk.png"
-                              alt="Soft Cell"
-                              class="track-cover"
-                            />
-                            <div class="track-meta">
-                              <span class="track-name">Tainted Love</span>
-                              <span class="track-artist">Soft Cell</span>
-                            </div>
-                          </a>
-                        </article>
-                      </td>
-
-                      <td class="track-album">Non-Stop Erotic Cabaret</td>
-                      <td class="track-duration">2:33</td>
-                      <td class="track-like active">
-                        <svg
-                          width="23"
-                          height="20"
-                          viewBox="0 0 23 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z"
-                            stroke="currentColor"
-                            stroke-width="2.02054"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </section>
         </div>
       </main>
 

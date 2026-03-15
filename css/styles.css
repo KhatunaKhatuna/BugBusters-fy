@@ -1163,7 +1163,7 @@ header .header-wrapper .user-menu-deskt {
 .topmixes-container {
   display: flex;
   flex-direction: column;
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
   margin-bottom: 3rem;
 }
 .topmixes-container .title-group {
@@ -1211,6 +1211,11 @@ header .header-wrapper .user-menu-deskt {
 }
 .topMixes-wrapper::-webkit-scrollbar {
   display: none;
+}
+.topMixes-wrapper .card-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 .topMixes-wrapper .card-main .img-container {
   display: flex;
@@ -1286,6 +1291,9 @@ header .header-wrapper .user-menu-deskt {
 }
 
 @media (min-width: 920px) {
+  .topmixes-container {
+    padding: 0 2.5rem;
+  }
   .topmixes-container .title-group .navigation-controls .control-btn {
     display: flex;
   }
@@ -1293,7 +1301,7 @@ header .header-wrapper .user-menu-deskt {
 .forYou-container {
   display: flex;
   flex-direction: column;
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
   margin-bottom: 3rem;
 }
 .forYou-container .title-group {
@@ -1450,6 +1458,9 @@ header .header-wrapper .user-menu-deskt {
 }
 
 @media (min-width: 920px) {
+  .forYou-container {
+    padding: 0 2.5rem;
+  }
   .forYou-container .title-group .navigation-controls .control-btn {
     display: flex;
   }
@@ -1457,7 +1468,7 @@ header .header-wrapper .user-menu-deskt {
 .home-section {
   display: flex;
   flex-direction: column;
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
   margin-bottom: 3rem;
 }
 .home-section .card-wrapper {
@@ -1465,13 +1476,6 @@ header .header-wrapper .user-menu-deskt {
   overflow-x: auto;
   overflow-y: hidden;
   gap: 1.1rem;
-  scroll-snap-type: x mandatory;
-}
-.home-section .card-wrapper > * {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-}
-.home-section .card-wrapper {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -1480,6 +1484,11 @@ header .header-wrapper .user-menu-deskt {
 }
 .home-section .card-wrapper {
   padding-top: 2rem;
+}
+@media (min-width: 920px) {
+  .home-section {
+    padding: 0 2.5rem;
+  }
 }
 
 .favoriteArtists .card-main a {
@@ -2985,6 +2994,99 @@ header .header-wrapper .user-menu-deskt {
 }
 .song-detail .tab-content .lyrics .lyric-line:hover {
   color: #1ed760;
+}
+
+.search-page .library-header {
+  padding-bottom: 1rem;
+}
+
+.search {
+  padding-inline: 15px;
+  padding: 0 1.5rem;
+  margin-bottom: 3rem;
+}
+.search.discover {
+  padding-top: 2.5rem;
+}
+.search .search-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.6rem;
+  padding-top: 2rem;
+}
+
+.recent-search {
+  display: none;
+}
+
+@media (min-width: 920px) {
+  .search.discover {
+    padding-top: 2.5rem;
+  }
+  .search .search-wrapper > * {
+    width: 17rem;
+  }
+  .search .search-wrapper {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1.1rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .search .search-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .search-page .library {
+    display: none;
+  }
+  .recent-search {
+    display: block;
+  }
+  .recent-search .card-main {
+    position: relative;
+  }
+  .recent-search .card-main::before {
+    content: " ";
+    background: url(../../assets/icons/pins/Vector\ 38.svg) no-repeat center;
+    z-index: 1;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    background-color: #111111;
+    position: absolute;
+    right: -0.3rem;
+    top: 0;
+    transform: translateY(-0.7rem);
+    border-top: none;
+  }
+  .recent-search .card-main::before {
+    content: " ";
+    z-index: 1;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: url(../../assets/icons/pins/Frame\ 5.svg) no-repeat center;
+    background-color: #111111;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-0.7rem);
+    border-top: none;
+  }
+  .recent-search .card-main a {
+    gap: 1.2rem;
+  }
+  .recent-search .card-main img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 0.3rem;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .recent-search .card-main .heading {
+    align-self: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

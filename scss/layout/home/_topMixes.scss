@@ -5,7 +5,7 @@
 
 .topmixes-container {
   @include mixins.flex-prop($direction: column);
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
   margin-bottom: 3rem;
   .title-group {
     @include mixins.flex-prop($align: center, $justify: space-between);
@@ -51,6 +51,7 @@
     display: none;
   }
   .card-main {
+    @include mixins.flex-prop(0.6rem, $direction: column);
     .img-container {
       @include mixins.cardBeforeEffect;
     }
@@ -59,6 +60,7 @@
 }
 @media (min-width: 920px) {
   .topmixes-container {
+    padding: 0 2.5rem;
     .title-group .navigation-controls .control-btn {
       display: flex;
     }
