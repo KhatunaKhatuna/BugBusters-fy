@@ -169,6 +169,7 @@
       padding: 1rem 2.8rem 0.8rem 2.5rem;
     }
     .card-main {
+      @include mixins.flex-prop(0.6rem, $direction: column);
       width: 100%;
       @include mixins.card-badges(variables.$library-colors);
 
