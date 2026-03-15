@@ -19,6 +19,8 @@
   Mobile Layout
 ==================*/
 .pageLayout {
+  $header-h: 9.5rem;
+  $footer-h: 6rem;
   position: relative;
   height: 100dvh;
   overflow-x: hidden;
@@ -42,7 +44,6 @@
   }
   .main {
     position: relative;
-    grid-area: main;
     //allows the grid row to shrink
     min-height: 0;
     height: 100%;
@@ -51,6 +52,7 @@
   .main-container {
     @extend %scrollBarNon;
     height: 100%;
+    padding-bottom: calc($header-h + $footer-h);
     overflow-y: auto;
   }
   .sidePopup {
@@ -98,6 +100,7 @@
     .main {
       padding-bottom: 0.5rem;
       .main-container {
+        padding-bottom: 0;
         @include mixins.layoutBorder;
       }
     }
