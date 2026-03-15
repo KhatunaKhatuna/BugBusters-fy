@@ -127,13 +127,13 @@
   overflow-y: hidden;
   gap: $gap;
 
-  scroll-snap-type: x mandatory;
-  // scroll-behavior: smooth;
+  // scroll-snap-type: x mandatory;
+  // // scroll-behavior: smooth;
 
-  & > * {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-  }
+  // & > * {
+  //   flex: 0 0 auto;
+  //   scroll-snap-align: start;
+  // }
   //  Hide scrollbar for IE, Edge and Firefox
   -ms-overflow-style: none;
   scrollbar-width: none;

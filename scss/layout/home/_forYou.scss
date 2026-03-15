@@ -5,7 +5,7 @@
 
 .forYou-container {
   @include mixins.flex-prop($direction: column);
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
   margin-bottom: 3rem;
   .title-group {
     @include mixins.flex-prop($align: center, $justify: space-between);
@@ -68,6 +68,7 @@
 
 @media (min-width: 920px) {
   .forYou-container {
+    padding: 0 2.5rem;
     .title-group .navigation-controls .control-btn {
       display: flex;
     }
