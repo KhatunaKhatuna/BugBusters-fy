@@ -7,14 +7,21 @@
   .library-header {
     padding-bottom: 1rem;
   }
+  .browse {
+    h2 {
+      padding: 2.5rem 1.5rem;
+      font-size: 2.2rem;
+      font-family: variables.$ff-satoshi-bold;
+      color: variables.$color-active-desk;
+      text-transform: capitalize;
+    }
+  }
 }
 
 .search {
-  padding-inline: 15px;
   padding: 0 1.5rem;
   margin-bottom: 3rem;
   &.discover {
-    padding-top: 2.5rem;
   }
   .search-wrapper {
     display: grid;
@@ -28,8 +35,8 @@
 }
 @media (min-width: 920px) {
   .search {
+    padding: 0 2.5rem;
     &.discover {
-      padding-top: 2.5rem;
     }
     .search-wrapper {
       & > * {
@@ -41,6 +48,11 @@
   .search-page {
     .library {
       display: none;
+    }
+    .browse {
+      h2 {
+        padding: 2.5rem;
+      }
     }
   }
   .recent-search {
